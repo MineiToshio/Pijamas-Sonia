@@ -1,4 +1,4 @@
-import { BUSINESS } from "@/utils/constants";
+import { BUSINESS, MENU_LINKS } from "@/utils/constants";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -17,23 +17,13 @@ const Footer: FC = ({}) => {
                   <ul>
                     <li>
                       <p>
-                        Address: 1234 Fashion Street, Suite 567, <br /> New York, NY 10001
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Email: <a href="#">info@fashionshop.com</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Phone: <a href="#">(212) 555-1234</a>
+                        Teléfono: {BUSINESS.contact.phone}
                       </p>
                     </li>
                   </ul>
-                  <a href="contact-1.html" className="tf-btn btn-line">
+                  <Link href="/contacto" className="tf-btn btn-line">
                     Dirección<i className="icon icon-arrow1-top-left"></i>
-                  </a>
+                  </Link>
                   <ul className="tf-social-icon d-flex gap-10">
                     {BUSINESS.contact.socials.map((social) => (
                       <Link
@@ -54,45 +44,16 @@ const Footer: FC = ({}) => {
                   <h6>Mapa del Sitio</h6>
                 </div>
                 <div className="footer-heading footer-heading-moblie">
-                  <h6>Help</h6>
+                  <h6>Mapa del Sitio</h6>
                 </div>
                 <ul className="footer-menu-list tf-collapse-content">
-                  <li>
-                    <a href="privacy-policy.html" className="footer-menu_item">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="delivery-return.html" className="footer-menu_item">
-                      {" "}
-                      Returns + Exchanges{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a href="shipping-delivery.html" className="footer-menu_item">
-                      Shipping
-                    </a>
-                  </li>
-                  <li>
-                    <a href="terms-conditions.html" className="footer-menu_item">
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a href="faq-1.html" className="footer-menu_item">
-                      FAQ’s
-                    </a>
-                  </li>
-                  <li>
-                    <a href="compare.html" className="footer-menu_item">
-                      Compare
-                    </a>
-                  </li>
-                  <li>
-                    <a href="wishlist.html" className="footer-menu_item">
-                      My Wishlist
-                    </a>
-                  </li>
+                  {MENU_LINKS.map(link => (
+                    <li key={link.id}>
+                      <Link href={link.url} className="footer-menu_item">
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

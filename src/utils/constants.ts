@@ -32,6 +32,7 @@ export const MENU_LINKS: MenuItem[] = [
   {
     id: "products-menu",
     name: "Productos",
+    url: "/productos",
     subMenu: [
       {
         id: "men-products-menu",
