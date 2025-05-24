@@ -1,32 +1,6 @@
+import { MENU_LINKS } from "@/utils/constants";
+import Link from "next/link";
 import { FC } from "react";
-
-const LINKS = [
-  {
-    name: "Inicio",
-    url: "/"
-  },
-  {
-    name: "Productos",
-    subMenu: [{
-       name: "Hombres",
-    url: "/"
-    }, {
-       name: "Mujeres",
-    url: "/"
-    },{
-       name: "Niños",
-    url: "/"
-    },]
-  },
-  {
-    name: "Nosotros",
-    url: "/nosotros"
-  },
-  {
-    name: "Contacto",
-    url: "/contacto"
-  },
-]
 
 const Header: FC = ({}) => {
   return (
@@ -51,22 +25,20 @@ const Header: FC = ({}) => {
           <div className="col-xl-6 tf-md-hidden">
             <nav className="box-navigation text-center">
               <ul className="box-nav-ul d-flex align-items-center justify-content-center gap-30">
-                {LINKS.map(link => (
-                  <li className={`menu-item ${link.subMenu ? "position-relative" : ""}`} key={link.name}>
-                    <a
-                      href={link.url ?? "#"}
-                      className="item-link"
-                    >
-                      {link.name}{link.subMenu && <i className="icon icon-arrow-down"></i>}
-                    </a>
+                {MENU_LINKS.map((link) => (
+                  <li className={`menu-item ${link.subMenu ? "position-relative" : ""}`} key={link.id}>
+                    <Link href={link.url ?? "#"} className="item-link">
+                      {link.name}
+                      {link.subMenu && <i className="icon icon-arrow-down"></i>}
+                    </Link>
                     {link.subMenu && (
                       <div className="sub-menu submenu-default">
                         <ul className="menu-list">
-                          {link.subMenu.map(menu => (
-                            <li key={menu.name}>
-                              <a href="blog-grid.html" className="menu-link-text link text_black-2">
+                          {link.subMenu.map((menu) => (
+                            <li key={menu.id}>
+                              <Link href={menu.url} className="menu-link-text link text_black-2">
                                 {menu.name}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>

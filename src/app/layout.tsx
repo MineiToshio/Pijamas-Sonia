@@ -3,6 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
+import BurgerMenu from "@/components/BurgerMenu";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -43,6 +44,8 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
+
+        <BurgerMenu />
 
         <Script type="text/javascript" src="js/bootstrap.min.js" />
         <Script type="text/javascript" src="js/jquery.min.js" />
