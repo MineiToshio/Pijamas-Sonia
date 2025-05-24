@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import Script from "next/script";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import BurgerMenu from "@/components/BurgerMenu";
+import GoTop from "@/components/GoTop";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -43,8 +44,10 @@ export default function RootLayout({
           <AnnouncementBar />
           <Header />
           {children}
+          <Footer />
         </div>
 
+        <GoTop />
         <BurgerMenu />
 
         <Script type="text/javascript" src="js/bootstrap.min.js" />

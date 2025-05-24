@@ -2872,6 +2872,7 @@ header.header-bg {
 }
 .footer .footer-logo {
   margin-bottom: 30px;
+  max-width: 180px;
 }
 .footer .footer-heading {
   margin-bottom: 25px;

@@ -5,19 +5,23 @@ export const BUSINESS = {
   fullName: "Inversiones Sonia Ferrer",
   contact: {
     phone: "993 188 303",
-    whatsapp: {
-      name: "993 188 303",
-      url: "https://wa.me/51993188303?text=Estoy%20buscando%20pijamas",
-    },
-    tiktok: {
-      name: "@pijamassonia",
-      url: "https://www.tiktok.com/@pijamassonia",
-    }
+    socials: [
+      {
+        name: "whatsapp",
+        icon: "icon-whatsapp",
+        text: "993 188 303",
+        url: "https://wa.me/51993188303?text=Estoy%20buscando%20pijamas",
+      },
+      {
+        name: "tiktok",
+        icon: "icon-tiktok",
+        text: "@pijamassonia",
+        url: "https://www.tiktok.com/@pijamassonia",
+      },
+    ],
   },
-  stores: [{
-
-  }]
-}
+  stores: [{}],
+};
 
 export const MENU_LINKS: MenuItem[] = [
   {

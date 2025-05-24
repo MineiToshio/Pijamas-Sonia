@@ -1,4 +1,4 @@
-import { MENU_LINKS } from "@/utils/constants";
+import { BUSINESS, MENU_LINKS } from "@/utils/constants";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -19,7 +19,7 @@ const Header: FC = ({}) => {
           </div>
           <div className="col-xl-3 col-md-4 col-6">
             <a href="index.html" className="logo-header">
-              <img src="images/logo/logo.svg" alt="logo" className="logo" />
+              <img src="images/logo.png" alt="logo" className="logo" />
             </a>
           </div>
           <div className="col-xl-6 tf-md-hidden">
@@ -51,26 +51,13 @@ const Header: FC = ({}) => {
           </div>
           <div className="col-xl-3 col-md-4 col-3">
             <ul className="nav-icon d-flex justify-content-end align-items-center gap-20">
-              <li className="nav-search">
-                <a
-                  href="#canvasSearch"
-                  data-bs-toggle="offcanvas"
-                  aria-controls="offcanvasLeft"
-                  className="nav-icon-item"
-                >
-                  <i className="icon icon-tiktok"></i>
-                </a>
-              </li>
-              <li className="nav-search">
-                <a
-                  href="#canvasSearch"
-                  data-bs-toggle="offcanvas"
-                  aria-controls="offcanvasLeft"
-                  className="nav-icon-item"
-                >
-                  <i className="icon icon-whatsapp"></i>
-                </a>
-              </li>
+              {BUSINESS.contact.socials.map((social) => (
+                <li className="nav-search" key={social.name}>
+                  <Link href={social.url} target="_blank" rel="noopener noreferrer" className="nav-icon-item">
+                    <i className={`icon ${social.icon}`} />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

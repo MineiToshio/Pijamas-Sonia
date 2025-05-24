@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const AnnouncementBar: FC = ({}) => {
   return (
-    <div className="announcement-bar bg_violet">
+    <div className="announcement-bar bg_pink">
       <div className="wrap-announcement-bar">
         <div className="box-sw-announcement-bar speed-1">
           <div className="announcement-bar-item">

@@ -9,7 +9,7 @@ const BurgerMenu: FC = ({}) => {
       <div className="mb-canvas-content">
         <div className="mb-body">
           <ul className="nav-ul-mb" id="wrapper-menu-navigation">
-            {MENU_LINKS.map(link => (
+            {MENU_LINKS.map((link) => (
               <li className="nav-mb-item" key={link.id}>
                 <Link
                   href={link.url ?? `#${link.id}`}
@@ -17,7 +17,7 @@ const BurgerMenu: FC = ({}) => {
                   {...(link.subMenu && {
                     "data-bs-toggle": "collapse",
                     "aria-expanded": "true",
-                    "aria-controls": link.id
+                    "aria-controls": link.id,
                   })}
                 >
                   <span>{link.name}</span>
@@ -26,7 +26,7 @@ const BurgerMenu: FC = ({}) => {
                 {link.subMenu && (
                   <div id={link.id} className="collapse">
                     <ul className="sub-nav-menu">
-                      {link.subMenu.map(menu => (
+                      {link.subMenu.map((menu) => (
                         <li key={menu.id}>
                           <Link href={menu.url} className="sub-nav-link">
                             {menu.name}
