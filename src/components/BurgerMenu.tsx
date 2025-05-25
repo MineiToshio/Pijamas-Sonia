@@ -12,7 +12,7 @@ const BurgerMenu: FC = ({}) => {
             {MENU_LINKS.map((link) => (
               <li className="nav-mb-item" key={link.id}>
                 <Link
-                  href={link.subMenu ?`#${link.id}` : link.url}
+                  href={link.subMenu ? `#${link.id}` : link.url}
                   className={`mb-menu-link ${link.subMenu ? "collapsed current" : ""}`}
                   {...(link.subMenu && {
                     "data-bs-toggle": "collapse",

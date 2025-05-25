@@ -20,7 +20,18 @@ export const BUSINESS = {
       },
     ],
   },
-  stores: [{}],
+  stores: [
+    {
+      mallName: "Galería Centro Gamarra",
+      address: "Prolg. Gamarra Nº 700",
+      shops: ["Tienda 212"],
+    },
+    {
+      mallName: "Galería Guizado",
+      address: "Prolg. Gamarra Nº 654",
+      shops: ["Tienda 211 - 2º piso", "Tienda 315 - 3º piso"],
+    },
+  ],
 };
 
 export const MENU_LINKS: MenuItem[] = [

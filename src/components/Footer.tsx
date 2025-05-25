@@ -16,9 +16,7 @@ const Footer: FC = ({}) => {
                   </div>
                   <ul>
                     <li>
-                      <p>
-                        Teléfono: {BUSINESS.contact.phone}
-                      </p>
+                      <p>Teléfono: {BUSINESS.contact.phone}</p>
                     </li>
                   </ul>
                   <Link href="/contacto" className="tf-btn btn-line">
@@ -47,7 +45,7 @@ const Footer: FC = ({}) => {
                   <h6>Mapa del Sitio</h6>
                 </div>
                 <ul className="footer-menu-list tf-collapse-content">
-                  {MENU_LINKS.map(link => (
+                  {MENU_LINKS.map((link) => (
                     <li key={link.id}>
                       <Link href={link.url} className="footer-menu_item">
                         {link.name}

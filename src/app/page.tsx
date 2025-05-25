@@ -1,5 +1,9 @@
-import styles from "./page.module.css";
+import Slider from "@/components/Slider";
 
 export default function Home() {
-  return <div className={styles.page}>123</div>;
+  return (
+    <>
+      <Slider />
+    </>
+  );
 }

@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const Header: FC = ({}) => {
   return (
-    <header id="header" className="header-default header-absolute">
+    <header id="header" className="header-default bg_light-pink">
       <div className="px_15 lg-px_40">
         <div className="row wrapper-header align-items-center">
           <div className="col-md-4 col-3 tf-lg-hidden">
