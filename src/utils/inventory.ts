@@ -891,7 +891,6 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 62,
-    favorite: true,
     name: "Pijama Abierta Franela Dama",
     price: "S/.40.00",
     mainImage: "images/products/product-5.jpeg",

@@ -18,7 +18,7 @@ const BestProducts: FC = () => {
           {BEST_PRODUCTS.map((product) => (
             <div key={product.id} className="card-product fl-item">
               <div className="card-product-wrapper">
-                <Link href="/product/1" className="product-img">
+                <Link href={`/product/${product.id}`} className="product-img">
                   <img
                     className="lazyload img-product"
                     data-src={product.mainImage}
@@ -41,7 +41,7 @@ const BestProducts: FC = () => {
                 )}
               </div>
               <div className="card-product-info">
-                <Link href="/product/1" className="title link">
+                <Link href={`/product/${product.id}`} className="title link">
                   {product.name}
                 </Link>
                 <span className="price">{product.price}</span>

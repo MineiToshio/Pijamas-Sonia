@@ -24,12 +24,29 @@ export const BUSINESS = {
     {
       mallName: "Galería Centro Gamarra",
       address: "Prolg. Gamarra Nº 700",
-      shops: ["Tienda 212"],
+      shops: [
+        {
+          name: "Tienda 212",
+          image: "",
+          businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
+        },
+      ],
     },
     {
       mallName: "Galería Guizado",
       address: "Prolg. Gamarra Nº 654",
-      shops: ["Tienda 211 - 2º piso", "Tienda 315 - 3º piso"],
+      shops: [
+        {
+          name: "Tienda 211 - 2º piso",
+          image: "",
+          businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
+        },
+        {
+          name: "Tienda 315 - 3º piso",
+          image: "",
+          businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
+        },
+      ],
     },
   ],
 };
