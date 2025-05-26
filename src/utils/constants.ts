@@ -73,3 +73,103 @@ export const MENU_LINKS: MenuItem[] = [
     url: "/contacto",
   },
 ];
+
+export const COLORS = {
+  pink: {
+    name: "Rosado",
+    value: "bg_rosado",
+  },
+  lilac: {
+    name: "Lila",
+    value: "bg_lila",
+  },
+  melon: {
+    name: "Melón",
+    value: "bg_melon",
+  },
+  waterGreen: {
+    name: "Verde Agua",
+    value: "bg_verdeAgua",
+  },
+  bubblegum: {
+    name: "Chicle",
+    value: "bg_chicle",
+  },
+  limeGreen: {
+    name: "Verde Limón",
+    value: "bg_verdeLimon",
+  },
+  italianBlue: {
+    name: "Azul Italiano",
+    value: "bg_azulItaliano",
+  },
+  lead: {
+    name: "Plomo",
+    value: "bg_plomo",
+  },
+  steel: {
+    name: "Acero",
+    value: "bg_acero",
+  },
+  corn: {
+    name: "Maíz",
+    value: "bg_maiz",
+  },
+  skyBlue: {
+    name: "Celeste",
+    value: "bg_celeste",
+  },
+  antike: {
+    name: "Antike",
+    value: "bg_antike",
+  },
+  blue: {
+    name: "Azul",
+    value: "bg_azul",
+  },
+  leaf: {
+    name: "Hoja",
+    value: "bg_hoja",
+  },
+  azuline: {
+    name: "Azulino",
+    value: "bg_azulino",
+  },
+  coral: {
+    name: "Coral",
+    value: "bg_coral",
+  },
+  barnie: {
+    name: "Barnie",
+    value: "bg_barnie",
+  },
+  turquoise: {
+    name: "Turquesa",
+    value: "bg_turquesa",
+  },
+  maroon: {
+    name: "Guinda",
+    value: "bg_guinda",
+  },
+  militaryGreen: {
+    name: "Verde Militar",
+    value: "bg_verdeMilitar",
+  },
+  fuchsia: {
+    name: "Fucsia",
+    value: "bg_fucsia",
+  },
+  white: {
+    name: "Blanco",
+    value: "bg_blanco",
+  },
+  wine: {
+    name: "Vino",
+    value: "bg_vino",
+  },
+  rosewood: {
+    name: "Palo Rosa",
+    value: "bg_paloRosa",
+  },
+};
+

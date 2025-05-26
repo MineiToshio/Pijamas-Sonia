@@ -10,6 +10,8 @@ export type MenuItem = SubMenuItem & {
 
 export type Product = {
   id: number;
+  disabled?: boolean;
+  favorite?: boolean;
   name: string;
   price: string;
   mainImage: string;
