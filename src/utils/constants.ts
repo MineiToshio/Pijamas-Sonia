@@ -22,34 +22,67 @@ export const BUSINESS = {
   },
   stores: [
     {
-      mallName: "Galería Centro Gamarra",
-      address: "Prolg. Gamarra Nº 700",
+      mallName: "Galería Guizado",
+      address: "Prolg. Gamarra Nº 654",
       shops: [
         {
-          name: "Tienda 212",
-          image: "",
+          id: "store-1",
+          name: "Tienda 211, Int. 5, 2º piso",
+          nickname: "Guizado",
+          image: "images/stores/store1.jpeg",
           businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
         },
       ],
     },
     {
-      mallName: "Galería Guizado",
-      address: "Prolg. Gamarra Nº 654",
+      mallName: "Galería Centro Gamarra",
+      address: "Prolg. Gamarra Nº 700",
       shops: [
         {
-          name: "Tienda 211 - 2º piso",
-          image: "",
+          id: "store-2",
+          name: "Tienda 212, 2º piso",
+          nickname: "Centro Gamarra",
+          image: "images/stores/store2.jpeg",
           businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
         },
+      ],
+    },
+    {
+      mallName: "Galería El Rey",
+      address: "Jr. Sebastián Barranca Nº 1575",
+      shops: [
         {
-          name: "Tienda 315 - 3º piso",
-          image: "",
+          id: "store-3",
+          name: "Tienda 108C, Sótano",
+          nickname: "El Rey",
+          image: "images/stores/store1.jpeg",
+          businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
+        },
+      ],
+    },
+    {
+      mallName: "Galería Unicachi",
+      address: "Prolg. Huánuco Nº 1568",
+      shops: [
+        {
+          id: "store-4",
+          name: "Tienda 123",
+          nickname: "Unicachi",
+          image: "images/stores/store2.jpeg",
           businessHours: ["Lunes a Sábados, 10:00am - 07:30pm", "Domingos no atendemos"],
         },
       ],
     },
   ],
 };
+
+export const SHOPS = BUSINESS.stores.flatMap((store) =>
+  store.shops.map((shop) => ({
+    ...shop,
+    mallName: store.mallName,
+    address: store.address,
+  })),
+);
 
 export const MENU_LINKS: MenuItem[] = [
   {

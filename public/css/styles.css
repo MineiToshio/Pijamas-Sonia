@@ -3288,6 +3288,7 @@ header.header-bg {
   justify-content: space-between;
   margin-bottom: 30px;
   gap: 15px;
+  overflow-x: auto;
 }
 .widget-tab-2 .nav-tab-item {
   width: 100%;
@@ -3297,8 +3298,8 @@ header.header-bg {
   justify-content: center;
   width: 100%;
   color: var(--main);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
   padding-bottom: 10px;
   padding-inline-start: 15px;
@@ -14338,6 +14339,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 22.4px;
   color: var(--text-3);
+  display: flex;
+  flex-direction: column;
 }
 .widget-card-store .description p:not(:last-child) {
   margin-bottom: 12px;
@@ -17140,6 +17143,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
   .widget-tab-2 {
     gap: 20px;
+  }
+  .widget-tab-2 .nav-tab-item a {
+    font-size: 20px;
   }
   .widget-card-store .description {
     margin-bottom: 20px;
