@@ -1,7 +1,13 @@
+"use client";
+
+import useBreakpoints from "@/hooks/useBreakPoints";
 import { SHOPS } from "@/utils/constants";
+import clsx from "clsx";
 import { FC } from "react";
 
 const Stores: FC = ({}) => {
+  const { isSm } = useBreakpoints();
+
   return (
     <section className="flat-spacing-9 pb_0">
       <div className="container">
@@ -21,7 +27,7 @@ const Stores: FC = ({}) => {
           <div className="tab-content">
             {SHOPS.map((shop, index) => (
               <div
-                className={`tab-pane ${index === 0 ? "active show" : ""}`}
+                className={clsx("tab-pane", { "active show": index === 0 || isSm })}
                 id={shop.id}
                 role="tabpanel"
                 key={shop.id}

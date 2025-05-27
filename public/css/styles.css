@@ -3283,7 +3283,7 @@ header.header-bg {
 }
 
 .widget-tab-2 {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -17142,6 +17142,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     line-height: 24px;
   }
   .widget-tab-2 {
+    display: flex;
     gap: 20px;
   }
   .widget-tab-2 .nav-tab-item a {

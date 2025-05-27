@@ -222,4 +222,3 @@ export const COLORS = {
     value: "bg_paloRosa",
   },
 };
-

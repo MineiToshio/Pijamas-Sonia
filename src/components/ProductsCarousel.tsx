@@ -11,28 +11,28 @@ const categories: CategoryItem[] = [
   {
     image: "images/collections/hombre.png",
     title: "Hombres",
-    link: "/productos"
+    link: "/productos",
   },
   {
     image: "images/collections/mujer.png",
     title: "Mujeres",
-    link: "/productos"
+    link: "/productos",
   },
   {
     image: "images/collections/nino.png",
     title: "Niños",
-    link: "/productos"
+    link: "/productos",
   },
   {
     image: "images/collections/bata.png",
     title: "Batas",
-    link: "/productos"
+    link: "/productos",
   },
   {
     image: "images/collections/maternidad.png",
     title: "Maternidad",
-    link: "/productos"
-  }
+    link: "/productos",
+  },
 ];
 
 const ProductsCarousel: FC = ({}) => {
