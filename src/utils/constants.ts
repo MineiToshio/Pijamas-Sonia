@@ -24,6 +24,8 @@ export const BUSINESS = {
     {
       mallName: "Galería Guizado",
       address: "Prolg. Gamarra Nº 654",
+      lat: -12.064724946001478,
+      lng: -77.0139742796159,
       shops: [
         {
           id: "store-1",
@@ -37,6 +39,8 @@ export const BUSINESS = {
     {
       mallName: "Galería Centro Gamarra",
       address: "Prolg. Gamarra Nº 700",
+      lat: -12.065270652720251,
+      lng: -77.01351825408436,
       shops: [
         {
           id: "store-2",
@@ -50,6 +54,8 @@ export const BUSINESS = {
     {
       mallName: "Galería El Rey",
       address: "Jr. Sebastián Barranca Nº 1575",
+      lat: -12.0627339919957,
+      lng: -77.01423985266548,
       shops: [
         {
           id: "store-3",
@@ -63,6 +69,8 @@ export const BUSINESS = {
     {
       mallName: "Galería Unicachi",
       address: "Prolg. Huánuco Nº 1568",
+      lat: -12.063400572789968,
+      lng: -77.01547376842302,
       shops: [
         {
           id: "store-4",
