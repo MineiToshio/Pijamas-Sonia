@@ -12,7 +12,6 @@
     "prettier-check": "prettier --config .prettierrc.json --check \"**/*.*\""
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.20.6",
     "clsx": "^2.1.1",
     "next": "15.1.8",
     "react": "^19.0.0",
@@ -20,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/google.maps": "^3.58.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

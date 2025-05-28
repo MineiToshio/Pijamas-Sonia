@@ -10,7 +10,7 @@ const Map: FC = ({}) => {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=marker`;
     script.async = true;
     script.defer = true;
     script.onload = () => setIsLoaded(true);
@@ -31,17 +31,14 @@ const Map: FC = ({}) => {
       center: { lat: centerLat, lng: centerLng },
       zoom: 12,
       zoomControl: true,
+      mapId: "stores-map",
     });
 
-    LOCATIONS.forEach((location, index) => {
-      new google.maps.Marker({
+    LOCATIONS.forEach((location) => {
+      new google.maps.marker.AdvancedMarkerElement({
         position: { lat: location.lat, lng: location.lng },
         map,
         title: location.mallName,
-        label: {
-          text: (index + 1).toString(),
-          color: "white",
-        },
       });
     });
 
