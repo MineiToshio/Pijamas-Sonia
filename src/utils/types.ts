@@ -15,6 +15,7 @@ export type Product = {
   name: string;
   slug: string;
   price: string;
+  gender: "hombre" | "mujer" | "niño" | "niña" | "bebe";
   mainImage: string;
   hoverImage: string;
   sizes: string[];
