@@ -36,22 +36,22 @@ const ContactInfo: FC = ({}) => {
             <p className="mb_24">
               Si estás interesado en comprar una pijama o en realizar ventas al por mayor, ¡contáctanos!
             </p>
-              <div className="mb_20">
+            <div className="mb_20">
+              <p>
+                <strong>Celular</strong>
+              </p>
+              <a href={`tel:${BUSINESS.contact.phone}`}>{BUSINESS.contact.phone}</a>
+            </div>
+            {BUSINESS.contact.socials.map((social) => (
+              <div className="mb_20" key={social.name}>
                 <p>
-                  <strong>Celular</strong>
+                  <strong>{social.name}</strong>
                 </p>
-                <a href={`tel:${BUSINESS.contact.phone}`}>{BUSINESS.contact.phone}</a>
+                <a href={social.url} target="_blank" rel="noopener noreferrer">
+                  {social.text}
+                </a>
               </div>
-              {BUSINESS.contact.socials.map((social) => (
-                <div className="mb_20" key={social.name}>
-                  <p>
-                    <strong>{social.name}</strong>
-                  </p>
-                  <a href={social.url} target="_blank" rel="noopener noreferrer">
-                    {social.text}
-                  </a>
-                </div>
-              ))}
+            ))}
           </div>
         </div>
       </div>
