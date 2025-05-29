@@ -230,3 +230,22 @@ export const COLORS = {
     value: "bg_paloRosa",
   },
 };
+
+export const MATERIALS = {
+  cotton: "Algodón",
+  pima: "Pima",
+  flannel: "Franela",
+  polar: "Polar",
+  fleece: "Felpa",
+  plush: "Peluche",
+  chamois: "Chamús",
+  other: "Otro",
+} as const;
+
+export const GENDERS = {
+  man: "Hombre",
+  woman: "Mujer",
+  boy: "Niño",
+  girl: "Niña",
+  baby: "Bebe",
+};

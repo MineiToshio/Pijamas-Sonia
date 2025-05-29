@@ -1,3 +1,5 @@
+import { GENDERS, MATERIALS } from "./constants";
+
 type SubMenuItem = {
   id: string;
   name: string;
@@ -15,7 +17,8 @@ export type Product = {
   name: string;
   slug: string;
   price: string;
-  gender: "hombre" | "mujer" | "niño" | "niña" | "bebe";
+  gender: (typeof GENDERS)[keyof typeof GENDERS];
+  material: (typeof MATERIALS)[keyof typeof MATERIALS];
   mainImage: string;
   hoverImage: string;
   sizes: string[];
