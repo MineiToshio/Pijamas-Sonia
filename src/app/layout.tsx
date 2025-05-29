@@ -23,15 +23,15 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pijamas Sonia</title>
 
-        <link rel="stylesheet" href="fonts/fonts.css" />
-        <link rel="stylesheet" href="fonts/font-icons.css" />
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="css/animate.css" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" href="/fonts/fonts.css" />
+        <link rel="stylesheet" href="/fonts/font-icons.css" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
-        <link rel="shortcut icon" href="images/logo/favicon.png" />
-        <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
+        <link rel="shortcut icon" href="/images/logo/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="/images/logo/favicon.png" />
       </head>
       <body className="preload-wrapper popup-loader">
         <div className="preload preload-container">
@@ -50,16 +50,16 @@ export default function RootLayout({
         <GoTop />
         <BurgerMenu />
 
-        <Script type="text/javascript" src="js/bootstrap.min.js" />
-        <Script type="text/javascript" src="js/jquery.min.js" />
-        <Script type="text/javascript" src="js/swiper-bundle.min.js" />
-        <Script type="text/javascript" src="js/carousel.js" />
-        <Script type="text/javascript" src="js/bootstrap-select.min.js" />
-        <Script type="text/javascript" src="js/lazysize.min.js" />
-        <Script type="text/javascript" src="js/count-down.js" />
-        <Script type="text/javascript" src="js/wow.min.js" />
-        <Script type="text/javascript" src="js/multiple-modal.js" />
-        <Script type="text/javascript" src="js/main.js" />
+        <Script type="text/javascript" src="/js/bootstrap.min.js" />
+        <Script type="text/javascript" src="/js/jquery.min.js" />
+        <Script type="text/javascript" src="/js/swiper-bundle.min.js" />
+        <Script type="text/javascript" src="/js/carousel.js" />
+        <Script type="text/javascript" src="/js/bootstrap-select.min.js" />
+        <Script type="text/javascript" src="/js/lazysize.min.js" />
+        <Script type="text/javascript" src="/js/count-down.js" />
+        <Script type="text/javascript" src="/js/wow.min.js" />
+        <Script type="text/javascript" src="/js/multiple-modal.js" />
+        <Script type="text/javascript" src="/js/main.js" />
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ const Footer: FC = ({}) => {
               <div className="col-md-6 col-12">
                 <div className="footer-infor">
                   <div className="footer-logo">
-                    <img src="images/logo.png" alt="logo" />
+                    <img src="/images/logo.png" alt="logo" />
                   </div>
                   <ul>
                     <li>

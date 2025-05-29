@@ -19,7 +19,7 @@ const Header: FC = ({}) => {
           </div>
           <div className="col-xl-3 col-md-4 col-6">
             <Link href="/" className="logo-header">
-              <img src="images/logo.png" alt="logo" className="logo" />
+              <img src="/images/logo.png" alt="logo" className="logo" />
             </Link>
           </div>
           <div className="col-xl-6 tf-md-hidden">

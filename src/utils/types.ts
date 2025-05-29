@@ -13,6 +13,7 @@ export type Product = {
   disabled?: boolean;
   favorite?: boolean;
   name: string;
+  slug: string;
   price: string;
   mainImage: string;
   hoverImage: string;
