@@ -6,6 +6,7 @@ export const PRODUCTS: Product[] = [
     id: 1,
     favorite: true,
     name: "Pijama Algodón Dama",
+    slug: "pijama-algodon-dama",
     price: "S/.25.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -22,6 +23,7 @@ export const PRODUCTS: Product[] = [
     id: 2,
     favorite: true,
     name: "Pijama Algodón Hombre",
+    slug: "pijama-algodon-hombre",
     price: "S/.26.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -37,6 +39,7 @@ export const PRODUCTS: Product[] = [
     id: 3,
     favorite: true,
     name: "Pijama Algodón Niño",
+    slug: "pijama-algodon-nino",
     price: "S/.17.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -52,6 +55,7 @@ export const PRODUCTS: Product[] = [
     id: 4,
     favorite: true,
     name: "Pijama Algodón Niña",
+    slug: "pijama-algodon-nina",
     price: "S/.17.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -68,6 +72,7 @@ export const PRODUCTS: Product[] = [
     id: 5,
     favorite: true,
     name: "Pijama Pima Dama",
+    slug: "pijama-pima-dama",
     price: "S/.37.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -85,6 +90,7 @@ export const PRODUCTS: Product[] = [
     id: 6,
     favorite: true,
     name: "Pijama Pima Hombre",
+    slug: "pijama-pima-hombre",
     price: "S/.37.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -100,6 +106,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 7,
     name: "Pijama Pima Niño",
+    slug: "pijama-pima-nino",
     price: "S/.25.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -114,6 +121,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 8,
     name: "Pijama Pima Niña",
+    slug: "pijama-pima-nina",
     price: "S/.25.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -128,6 +136,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 9,
     name: "Pijama Franela Dama",
+    slug: "pijama-franela-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -143,6 +152,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 10,
     name: "Pijama Franela Hombre",
+    slug: "pijama-franela-hombre",
     price: "S/.37.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -158,6 +168,7 @@ export const PRODUCTS: Product[] = [
     id: 11,
     favorite: true,
     name: "Pijama Franela Niño",
+    slug: "pijama-franela-nino",
     price: "S/.27.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -172,6 +183,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 12,
     name: "Pijama Franela Niña",
+    slug: "pijama-franela-nina",
     price: "S/.27.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -188,6 +200,7 @@ export const PRODUCTS: Product[] = [
     id: 13,
     favorite: true,
     name: "Pijama Polar Dama",
+    slug: "pijama-polar-dama",
     price: "S/.27.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -203,6 +216,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 14,
     name: "Pijama Polar Hombre",
+    slug: "pijama-polar-hombre",
     price: "S/.27.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -218,6 +232,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 15,
     name: "Pijama Polar Niño",
+    slug: "pijama-polar-nino",
     price: "S/.22.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -232,6 +247,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 16,
     name: "Pijama Polar Niña",
+    slug: "pijama-polar-nina",
     price: "S/.22.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -246,6 +262,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 17,
     name: "Pijama Pantalón Largo M/ corta Algodón Dama",
+    slug: "pijama-pantalon-largo-manga-corta-algodon-dama",
     price: "S/.24.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -261,6 +278,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 18,
     name: "Pijama Pantalón Largo M/corta Algodón Hombre",
+    slug: "pijama-pantalon-largo-manga-corta-algodon-hombre",
     price: "S/.25.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -275,6 +293,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 19,
     name: "Pijama Pantalón Largo M/corta Pima Dama",
+    slug: "pijama-pantalon-largo-manga-corta-pima-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -290,6 +309,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 20,
     name: "Pijama Pantalón Largo M/corta Pima Hombre",
+    slug: "pijama-pantalon-largo-manga-corta-pima-hombre",
     price: "S/.35.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -304,6 +324,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 21,
     name: "Pijama Algodón Dama Chavo",
+    slug: "pijama-algodon-dama-chavo",
     price: "S/.22.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -319,6 +340,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 22,
     name: "Pijama Pima Dama Chavo",
+    slug: "pijama-pima-dama-chavo",
     price: "S/.30.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -334,6 +356,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 23,
     name: "Pijama Short Algodón Dama",
+    slug: "pijama-short-algodon-dama",
     price: "S/.25.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -349,6 +372,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 24,
     name: "Pijama Short Algodón Hombre",
+    slug: "pijama-short-algodon-hombre",
     price: "S/.23.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -363,6 +387,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 25,
     name: "Pijama Short Algodón Niño",
+    slug: "pijama-short-algodon-nino",
     price: "S/.15.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -376,7 +401,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 26,
-    name: "Pijama Short Algodón Niño",
+    name: "Pijama Short Algodón Niña",
+    slug: "pijama-short-algodon-nina",
     price: "S/.15.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -392,6 +418,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 27,
     name: "Pijama Short Pima Dama",
+    slug: "pijama-short-pima-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -408,6 +435,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 28,
     name: "Pijama Short Pima Hombre",
+    slug: "pijama-short-pima-hombre",
     price: "S/.35.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -423,6 +451,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 29,
     name: "Pijama Short Pima Niño",
+    slug: "pijama-short-pima-nino",
     price: "S/.20.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -437,6 +466,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 30,
     name: "Pijama Short Pima Niña",
+    slug: "pijama-short-pima-nina",
     price: "S/.20.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -451,6 +481,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 31,
     name: "Pijama Juego Manga Corta Algodón",
+    slug: "pijama-juego-manga-corta-algodon",
     price: "S/.30.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -466,6 +497,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 32,
     name: "Pijama Juego Manga Corta Algodón",
+    slug: "pijama-juego-manga-corta-algodon-xl",
     price: "S/.36.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -481,6 +513,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 33,
     name: "Pijama Juego Manga Larga Algodón",
+    slug: "pijama-juego-manga-larga-algodon",
     price: "S/.32.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -496,6 +529,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 34,
     name: "Pijama Juego Manga Larga Algodón",
+    slug: "pijama-juego-manga-larga-algodon-xl",
     price: "S/.40.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -511,6 +545,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 35,
     name: "Pijama Juego Pima Manga Larga",
+    slug: "pijama-juego-pima-manga-larga",
     price: "S/.45.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -525,6 +560,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 36,
     name: "Pijama Juego Pima Manga Corta",
+    slug: "pijama-juego-pima-manga-corta",
     price: "S/.43.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -539,6 +575,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 37,
     name: "Pijama Juego 3 Piezas",
+    slug: "pijama-juego-3-piezas",
     price: "S/.30.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -554,6 +591,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 38,
     name: "Pijama Bata Algodón Manga Corta",
+    slug: "pijama-bata-algodon-manga-corta",
     price: "S/.17.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -569,6 +607,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 39,
     name: "Pijama Bata Algodón Manga Larga",
+    slug: "pijama-bata-algodon-manga-larga",
     price: "S/.18.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -584,6 +623,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 40,
     name: "Pijama Bata Franela",
+    slug: "pijama-bata-franela",
     price: "S/.27.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -599,6 +639,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 41,
     name: "Pijama Bata Polar",
+    slug: "pijama-bata-polar",
     price: "S/.25.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -613,6 +654,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 42,
     name: "Pijama Bata Polar Levantar Hombre",
+    slug: "pijama-bata-polar-levantar-hombre",
     price: "S/.40.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -629,6 +671,7 @@ export const PRODUCTS: Product[] = [
     id: 43,
     favorite: true,
     name: "Pijama Bata Polar Levantar Dama",
+    slug: "pijama-bata-polar-levantar-dama",
     price: "S/.40.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -643,6 +686,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 44,
     name: "Pijama Bata Algodón Levantar Hombre",
+    slug: "pijama-bata-algodon-levantar-hombre",
     price: "S/.27.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -657,6 +701,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 45,
     name: "Pijama Bata Algodón Levantar Dama",
+    slug: "pijama-bata-algodon-levantar-dama",
     price: "S/.27.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -671,6 +716,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 46,
     name: "Pijama Bata Felpa Hombre",
+    slug: "pijama-bata-felpa-hombre",
     price: "S/.40.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -685,6 +731,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 47,
     name: "Pijama Bata Felpa Dama",
+    slug: "pijama-bata-felpa-dama",
     price: "S/.40.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -699,6 +746,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 48,
     name: "Pijama Pima Niño #16",
+    slug: "pijama-pima-nino-16",
     price: "S/.32.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -713,6 +761,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 49,
     name: "Pijama Pima Niña #16",
+    slug: "pijama-pima-nina-16",
     price: "S/.32.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -723,6 +772,7 @@ export const PRODUCTS: Product[] = [
     id: 50,
     favorite: true,
     name: "Pijama Algodón Niño #16",
+    slug: "pijama-algodon-nino-16",
     price: "S/.22.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -737,6 +787,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 51,
     name: "Pijama Algodón Niña #16",
+    slug: "pijama-algodon-nina-16",
     price: "S/.22.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -751,6 +802,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 52,
     name: "Pijama Polar Niño #16",
+    slug: "pijama-polar-nino-16",
     price: "S/.23.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -765,6 +817,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 53,
     name: "Pijama Polar Niña #16",
+    slug: "pijama-polar-nina-16",
     price: "S/.23.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -779,6 +832,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 54,
     name: "Pijama Short Pima #16",
+    slug: "pijama-short-pima-16",
     price: "S/.30.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -793,6 +847,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 55,
     name: "Juego Chamús Dama",
+    slug: "juego-chamus-dama",
     price: "S/.55.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -807,6 +862,7 @@ export const PRODUCTS: Product[] = [
     id: 56,
     favorite: true,
     name: "Juego Chamús Short Dama",
+    slug: "juego-chamus-short-dama",
     price: "S/.40.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -820,6 +876,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 57,
     name: "Pijama Abierta Algodón Hombre",
+    slug: "pijama-abierta-algodon-hombre",
     price: "S/.32.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -834,6 +891,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 58,
     name: "Pijama Abierta Algodón Dama",
+    slug: "pijama-abierta-algodon-dama",
     price: "S/.32.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -848,6 +906,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 59,
     name: "Pijama Abierta Algodón Manga Corta Pantalón Largo Hombre",
+    slug: "pijama-abierta-algodon-manga-corta-pantalon-largo-hombre",
     price: "S/.30.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -863,6 +922,7 @@ export const PRODUCTS: Product[] = [
     id: 60,
     favorite: true,
     name: "Pijama Abierta Algodón Manga Corta Pantalón Largo Dama",
+    slug: "pijama-abierta-algodon-manga-corta-pantalon-largo-dama",
     price: "S/.30.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -877,6 +937,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 61,
     name: "Pijama Abierta Franela Hombre",
+    slug: "pijama-abierta-franela-hombre",
     price: "S/.40.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -892,6 +953,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 62,
     name: "Pijama Abierta Franela Dama",
+    slug: "pijama-abierta-franela-dama",
     price: "S/.40.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -908,6 +970,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 63,
     name: "Pijama Abierta Polar Hombre",
+    slug: "pijama-abierta-polar-hombre",
     price: "S/.35.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -924,6 +987,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 64,
     name: "Pijama Abierta Polar Dama",
+    slug: "pijama-abierta-polar-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -938,6 +1002,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 65,
     name: "Pijama Polar XL Hombre",
+    slug: "pijama-polar-xl-hombre",
     price: "S/.32.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -953,6 +1018,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 66,
     name: "Pijama Polar XL Dama",
+    slug: "pijama-polar-xl-dama",
     price: "S/.32.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -968,6 +1034,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 67,
     name: "Pijama Franela XL Hombre",
+    slug: "pijama-franela-xl-hombre",
     price: "S/.45.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -983,6 +1050,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 68,
     name: "Pijama Franela XL Dama",
+    slug: "pijama-franela-xl-dama",
     price: "S/.45.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -998,6 +1066,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 69,
     name: "Pijama Polar Abierta XL Hombre",
+    slug: "pijama-polar-abierta-xl-hombre",
     price: "S/.37.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -1013,6 +1082,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 70,
     name: "Pijama Polar Abierta XL Dama",
+    slug: "pijama-polar-abierta-xl-dama",
     price: "S/.37.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -1028,6 +1098,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 71,
     name: "Pijama Bata y Camisón Polar XL",
+    slug: "pijama-bata-y-camison-polar-xl",
     price: "S/.28.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -1043,6 +1114,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 72,
     name: "Pijama Algodón Manga Larga XL Hombre",
+    slug: "pijama-algodon-manga-larga-xl-hombre",
     price: "S/.32.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -1058,6 +1130,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 73,
     name: "Pijama Algodón Manga Larga XL Dama",
+    slug: "pijama-algodon-manga-larga-xl-dama",
     price: "S/.32.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -1074,6 +1147,7 @@ export const PRODUCTS: Product[] = [
     id: 74,
     disabled: true,
     name: "Pijama Peluche Dama",
+    slug: "pijama-peluche-dama",
     price: "-",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -1084,6 +1158,7 @@ export const PRODUCTS: Product[] = [
     id: 75,
     disabled: true,
     name: "Pijama Peluche Salida Dama",
+    slug: "pijama-peluche-salida-dama",
     price: "-",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -1093,6 +1168,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 76,
     name: "Pijama Short Algodón XL Hombre",
+    slug: "pijama-short-algodon-xl-hombre",
     price: "S/.28.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -1108,6 +1184,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 77,
     name: "Pijama Short Algodón XL Dama",
+    slug: "pijama-short-algodon-xl-dama",
     price: "S/.28.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -1123,6 +1200,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 78,
     name: "Pijama Short Algodón #16 Niño",
+    slug: "pijama-short-algodon-16-nino",
     price: "S/.17.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -1138,6 +1216,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 79,
     name: "Pijama Short Algodón #16 Niña",
+    slug: "pijama-short-algodon-16-nina",
     price: "S/.17.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -1153,6 +1232,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 80,
     name: "Pijama Franela #16 Niño",
+    slug: "pijama-franela-16-nino",
     price: "S/.30.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -1168,6 +1248,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 81,
     name: "Pijama Franela #16 Niña",
+    slug: "pijama-franela-16-nina",
     price: "S/.30.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -1183,6 +1264,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 82,
     name: "Pijama Bata Algodón XL Manga Corta",
+    slug: "pijama-bata-algodon-xl-manga-corta",
     price: "S/.25.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -1198,6 +1280,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 83,
     name: "Pijama Bata Algodón XL Manga Larga",
+    slug: "pijama-bata-algodon-xl-manga-larga",
     price: "S/.27.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -1213,6 +1296,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 84,
     name: "Pijama Algodón Manga Corta Pantalón Largo XL Hombre",
+    slug: "pijama-algodon-manga-corta-pantalon-largo-xl-hombre",
     price: "S/.32.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -1228,6 +1312,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 85,
     name: "Pijama Algodón Manga Corta Pantalón Largo XL Dama",
+    slug: "pijama-algodon-manga-corta-pantalon-largo-xl-dama",
     price: "S/.32.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -1244,6 +1329,7 @@ export const PRODUCTS: Product[] = [
     id: 86,
     disabled: true,
     name: "Pijama Short Pima XL Hombre",
+    slug: "pijama-short-pima-xl-hombre",
     price: "S/.35.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -1253,6 +1339,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 87,
     name: "Pijama Short Pima XL Dama",
+    slug: "pijama-short-pima-xl-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -1267,6 +1354,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 88,
     name: "Pijama Short Algodón Abierta Hombre",
+    slug: "pijama-short-algodon-abierta-hombre",
     price: "S/.27.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -1282,6 +1370,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 89,
     name: "Pijama Short Algodón Abierta Dama",
+    slug: "pijama-short-algodon-abierta-dama",
     price: "S/.27.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -1297,6 +1386,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 90,
     name: "Pijama Algodón Manga Corta Pantalón Largo Abierta Hombre",
+    slug: "pijama-algodon-manga-corta-pantalon-largo-abierta-hombre",
     price: "S/.35.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -1312,6 +1402,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 91,
     name: "Pijama Algodón Manga Corta Pantalón Largo Abierta Dama",
+    slug: "pijama-algodon-manga-corta-pantalon-largo-abierta-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -1327,6 +1418,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 92,
     name: "Pijama Algodón Manga Larga XL Abierta Hombre",
+    slug: "pijama-algodon-manga-larga-xl-abierta-hombre",
     price: "S/.35.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -1342,6 +1434,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 93,
     name: "Pijama Algodón Manga Larga XL Abierta Dama",
+    slug: "pijama-algodon-manga-larga-xl-abierta-dama",
     price: "S/.35.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
@@ -1357,6 +1450,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 94,
     name: "Bata Franela XL",
+    slug: "bata-franela-xl",
     price: "S/.28.00",
     mainImage: "images/products/product-5.jpeg",
     hoverImage: "images/products/product-6.jpeg",
@@ -1372,6 +1466,7 @@ export const PRODUCTS: Product[] = [
     id: 95,
     disabled: true,
     name: "Franela Bebé Pima",
+    slug: "franela-bebe-pima",
     price: "S/.22.00",
     mainImage: "images/products/product-4.jpeg",
     hoverImage: "images/products/product-5.jpeg",
@@ -1381,6 +1476,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 96,
     name: "Pima Abierto Dama",
+    slug: "pima-abierto-dama",
     price: "S/.37.00",
     mainImage: "images/products/product-3.jpeg",
     hoverImage: "images/products/product-4.jpeg",
@@ -1395,6 +1491,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 97,
     name: "Pijama Franela XL Abierta Hombre",
+    slug: "pijama-franela-xl-abierta-hombre",
     price: "S/.45.00",
     mainImage: "images/products/product-2.jpeg",
     hoverImage: "images/products/product-3.jpeg",
@@ -1410,6 +1507,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 98,
     name: "Pijama Franela XL Abierta Dama",
+    slug: "pijama-franela-xl-abierta-dama",
     price: "S/.45.00",
     mainImage: "images/products/product-1.jpeg",
     hoverImage: "images/products/product-2.jpeg",
@@ -1426,6 +1524,7 @@ export const PRODUCTS: Product[] = [
     id: 99,
     disabled: true,
     name: "Pijama Pima XL Hombre",
+    slug: "pijama-pima-xl-hombre",
     price: "S/.45.00",
     mainImage: "images/products/product-8.jpeg",
     hoverImage: "images/products/product-1.jpeg",
@@ -1435,6 +1534,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 100,
     name: "Pijama Pima XL Dama",
+    slug: "pijama-pima-xl-dama",
     price: "S/.45.00",
     mainImage: "images/products/product-7.jpeg",
     hoverImage: "images/products/product-8.jpeg",
@@ -1449,6 +1549,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 101,
     name: "Pijama Abierta Niños Algodón",
+    slug: "pijama-abierta-ninos-algodon",
     price: "S/.25.00",
     mainImage: "images/products/product-6.jpeg",
     hoverImage: "images/products/product-7.jpeg",
