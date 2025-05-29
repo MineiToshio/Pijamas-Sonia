@@ -44,7 +44,7 @@ const BestProducts: FC = () => {
                 <Link href={`/productos/${product.slug}`} className="title link">
                   {product.name}
                 </Link>
-                <span className="price">{product.price}</span>
+                <span className="price">S/{product.price.toFixed(2)}</span>
                 {product.colors.length > 0 && (
                   <ul className="list-color-product">
                     {product.colors.map((color, index) => (

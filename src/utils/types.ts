@@ -16,7 +16,7 @@ export type Product = {
   favorite?: boolean;
   name: string;
   slug: string;
-  price: string;
+  price: number;
   gender: (typeof GENDERS)[keyof typeof GENDERS];
   material: (typeof MATERIALS)[keyof typeof MATERIALS];
   mainImage: string;
