@@ -7,13 +7,13 @@ export const BUSINESS = {
     phone: "993 188 303",
     socials: [
       {
-        name: "whatsapp",
+        name: "Whatsapp",
         icon: "icon-whatsapp",
         text: "993 188 303",
         url: "https://wa.me/51993188303?text=Estoy%20buscando%20pijamas",
       },
       {
-        name: "tiktok",
+        name: "Tiktok",
         icon: "icon-tiktok",
         text: "@pijamassonia",
         url: "https://www.tiktok.com/@pijamassonia",

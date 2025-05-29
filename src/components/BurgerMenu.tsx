@@ -1,6 +1,6 @@
-import { MENU_LINKS } from "@/utils/constants";
+import { BUSINESS, MENU_LINKS } from "@/utils/constants";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, Fragment } from "react";
 
 const BurgerMenu: FC = ({}) => {
   return (
@@ -41,20 +41,43 @@ const BurgerMenu: FC = ({}) => {
           </ul>
           <div className="mb-other-content">
             <div className="mb-notice">
-              <a href="contact-1.html" className="text-need">
+              <Link href="/contact" className="text-need">
                 Visita nuestras tiendas
-              </a>
+              </Link>
             </div>
             <ul className="mb-info">
-              <li>
-                Address: 1234 Fashion Street, Suite 567, <br /> New York, NY 10001
-              </li>
-              <li>
-                Email: <b>info@fashionshop.com</b>
-              </li>
-              <li>
-                Phone: <b>(212) 555-1234</b>
-              </li>
+              {BUSINESS.stores.map((store) => (
+                <li key={store.mallName}>
+                  <strong>{store.mallName}</strong>
+                  <br />
+                  {store.address}
+                  {store.shops.map((shop) => (
+                    <Fragment key={shop.name}>
+                      <br />
+                      <p>{shop.name}</p>
+                    </Fragment>
+                  ))}
+                  <br />
+                </li>
+              ))}
+            </ul>
+            <p className="mb_4">
+              Celular: <b>{BUSINESS.contact.phone}</b>
+            </p>
+            <ul className="tf-social-icon d-flex gap-20 style-default">
+              {BUSINESS.contact.socials.map((social) => (
+                <li key={social.url}>
+                  <a
+                    title={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="box-icon link round social-facebook border-line-black"
+                  >
+                    <i className={`icon fs-14 ${social.icon}`} />
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

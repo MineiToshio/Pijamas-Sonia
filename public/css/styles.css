@@ -1505,6 +1505,10 @@ label {
   margin-top: 140px;
 }
 
+.mb_4 {
+  margin-bottom: 4px;
+}
+
 .mb_10 {
   margin-bottom: 10px;
 }
@@ -2510,7 +2514,9 @@ label {
   font-size: 14px;
   line-height: 24px;
 }
-
+.nav-ul-mb {
+  margin-bottom: 16px;
+}
 .nav-ul-mb .nav-mb-item {
   padding: 2px 0px;
 }

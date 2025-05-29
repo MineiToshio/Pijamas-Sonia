@@ -18,9 +18,9 @@ const Header: FC = ({}) => {
             </a>
           </div>
           <div className="col-xl-3 col-md-4 col-6">
-            <a href="index.html" className="logo-header">
+            <Link href="/" className="logo-header">
               <img src="images/logo.png" alt="logo" className="logo" />
-            </a>
+            </Link>
           </div>
           <div className="col-xl-6 tf-md-hidden">
             <nav className="box-navigation text-center">
