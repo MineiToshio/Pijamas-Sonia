@@ -6,6 +6,8 @@ const PRODUCTS: Product[] = [
     id: 1,
     favorite: true,
     name: "Pijama Algodón Dama",
+    description:
+      "Descubre el confort perfecto con nuestro pijama de algodón premium. Diseñado para brindar suavidad y frescura durante toda la noche, con un corte elegante que combina estilo y comodidad. Ideal para descansar plácidamente con la mejor calidad.",
     slug: "pijama-algodon-dama",
     price: 25,
     gender: GENDERS.woman,
@@ -25,6 +27,8 @@ const PRODUCTS: Product[] = [
     id: 2,
     favorite: true,
     name: "Pijama Algodón Hombre",
+    description:
+      "Experimenta el máximo confort con nuestra exclusiva pijama de algodón para hombre. Diseñada con un corte moderno y elegante, ofrece suavidad y transpirabilidad durante toda la noche. Perfecta para un descanso plácido con la mejor calidad.",
     slug: "pijama-algodon-hombre",
     price: 26,
     gender: GENDERS.man,
@@ -43,6 +47,8 @@ const PRODUCTS: Product[] = [
     id: 3,
     favorite: true,
     name: "Pijama Algodón Niño",
+    description:
+      "La pijama ideal para los más pequeños de la casa. Confeccionada en suave algodón, garantiza comodidad y libertad de movimiento para los niños. Diseño práctico y resistente para sus aventuras nocturnas.",
     slug: "pijama-algodon-nino",
     price: 17,
     gender: GENDERS.boy,
@@ -61,6 +67,8 @@ const PRODUCTS: Product[] = [
     id: 4,
     favorite: true,
     name: "Pijama Algodón Niña",
+    description:
+      "Encantadora pijama de algodón para las princesas de la casa. Combina suavidad y estilo con un diseño adorable. Ideal para que las niñas disfruten de noches cómodas y divertidas.",
     slug: "pijama-algodon-nina",
     price: 17,
     gender: GENDERS.girl,
@@ -80,6 +88,8 @@ const PRODUCTS: Product[] = [
     id: 5,
     favorite: true,
     name: "Pijama Pima Dama",
+    description:
+      "Descubre el lujo del algodón Pima con nuestra exclusiva pijama. Ofrece una suavidad superior y un tacto sedoso que eleva tu experiencia de descanso. Diseño sofisticado para noches de ensueño.",
     slug: "pijama-pima-dama",
     price: 37,
     gender: GENDERS.woman,
@@ -100,6 +110,8 @@ const PRODUCTS: Product[] = [
     id: 6,
     favorite: true,
     name: "Pijama Pima Hombre",
+    description:
+      "Elegancia y confort se unen en nuestra exclusiva pijama de algodón Pima premium. Diseñada para el hombre moderno que busca calidad y estilo. Experimenta noches de descanso excepcional con nuestra mejor tela.",
     slug: "pijama-pima-hombre",
     price: 37,
     gender: GENDERS.man,
@@ -118,6 +130,8 @@ const PRODUCTS: Product[] = [
   {
     id: 7,
     name: "Pijama Pima Niño",
+    description:
+      "La pijama más suave y cómoda para los pequeños exploradores. Confeccionada en algodón Pima de alta calidad, ofrece durabilidad y confort para las aventuras nocturnas de los niños.",
     slug: "pijama-pima-nino",
     price: 25,
     gender: GENDERS.boy,
@@ -135,6 +149,8 @@ const PRODUCTS: Product[] = [
   {
     id: 8,
     name: "Pijama Pima Niña",
+    description:
+      "Una pijama de ensueño en suave algodón Pima para las princesas. Combina elegancia y comodidad con un diseño encantador. Perfecta para noches mágicas y confortables.",
     slug: "pijama-pima-nina",
     price: 25,
     gender: GENDERS.girl,
@@ -152,6 +168,8 @@ const PRODUCTS: Product[] = [
   {
     id: 9,
     name: "Pijama Franela Dama",
+    description:
+      "Abraza el calor y la suavidad con nuestra exclusiva pijama de franela. Ideal para noches frescas, ofrece un confort excepcional y un tacto acogedor. Diseño elegante que combina estilo y funcionalidad.",
     slug: "pijama-franela-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -170,6 +188,8 @@ const PRODUCTS: Product[] = [
   {
     id: 10,
     name: "Pijama Franela Hombre",
+    description:
+      "Confort y calidez se unen en nuestra exclusiva pijama de franela premium. Diseñada para ofrecer máxima comodidad durante las noches más frescas. Corte moderno que combina funcionalidad y estilo.",
     slug: "pijama-franela-hombre",
     price: 37,
     gender: GENDERS.man,
@@ -188,6 +208,8 @@ const PRODUCTS: Product[] = [
     id: 11,
     favorite: true,
     name: "Pijama Franela Niño",
+    description:
+      "La pijama más acogedora para los pequeños aventureros. Confeccionada en suave franela, brinda calor y confort durante las noches frescas. Diseño resistente y práctico para el descanso de los niños.",
     slug: "pijama-franela-nino",
     price: 27,
     gender: GENDERS.boy,
@@ -205,6 +227,8 @@ const PRODUCTS: Product[] = [
   {
     id: 12,
     name: "Pijama Franela Niña",
+    description:
+      "Una encantadora pijama de franela para las princesas. Combina calidez y suavidad con un diseño adorable. Perfecta para noches frescas y confortables.",
     slug: "pijama-franela-nina",
     price: 27,
     gender: GENDERS.girl,
@@ -224,6 +248,8 @@ const PRODUCTS: Product[] = [
     id: 13,
     favorite: true,
     name: "Pijama Polar Dama",
+    description:
+      "Nuestra exclusiva pijama polar te brinda máxima calidez y confort. Confeccionada en suave polar, es ideal para las noches más frías. Diseño elegante que combina estilo y funcionalidad.",
     slug: "pijama-polar-dama",
     price: 27,
     gender: GENDERS.woman,
@@ -242,6 +268,8 @@ const PRODUCTS: Product[] = [
   {
     id: 14,
     name: "Pijama Polar Hombre",
+    description:
+      "La pijama polar más confortable para el hombre moderno. Diseñada con material polar de alta calidad, ofrece calidez y suavidad excepcional. Perfecta para noches de invierno.",
     slug: "pijama-polar-hombre",
     price: 27,
     gender: GENDERS.man,
@@ -260,6 +288,8 @@ const PRODUCTS: Product[] = [
   {
     id: 15,
     name: "Pijama Polar Niño",
+    description:
+      "Una pijama polar acogedora para los pequeños exploradores. Confeccionada en suave polar, garantiza calor y confort durante las noches frías. Diseño práctico y resistente.",
     slug: "pijama-polar-nino",
     price: 22,
     gender: GENDERS.boy,
@@ -277,6 +307,8 @@ const PRODUCTS: Product[] = [
   {
     id: 16,
     name: "Pijama Polar Niña",
+    description:
+      "La pijama polar más adorable para las princesas. Combina calidez y estilo con un diseño encantador. Ideal para noches frescas y confortables.",
     slug: "pijama-polar-nina",
     price: 22,
     gender: GENDERS.girl,
@@ -294,6 +326,8 @@ const PRODUCTS: Product[] = [
   {
     id: 17,
     name: "Pijama Pantalón Largo M/ corta Algodón Dama",
+    description:
+      "Nuestra exclusiva pijama de algodón con pantalón largo y manga corta. Diseñada para ofrecer confort y estilo en cada momento. Perfecta combinación de frescura y elegancia.",
     slug: "pijama-pantalon-largo-manga-corta-algodon-dama",
     price: 24,
     gender: GENDERS.woman,
@@ -312,6 +346,8 @@ const PRODUCTS: Product[] = [
   {
     id: 18,
     name: "Pijama Pantalón Largo M/corta Algodón Hombre",
+    description:
+      "La pijama de algodón más versátil para el hombre moderno. Confeccionada con pantalón largo y manga corta, ofrece confort y estilo. Ideal para noches de descanso plácido.",
     slug: "pijama-pantalon-largo-manga-corta-algodon-hombre",
     price: 25,
     gender: GENDERS.man,
@@ -329,6 +365,8 @@ const PRODUCTS: Product[] = [
   {
     id: 19,
     name: "Pijama Pantalón Largo M/corta Pima Dama",
+    description:
+      "Una pijama de lujo en algodón Pima con pantalón largo y manga corta. Diseñada para brindar máxima suavidad y confort. Elegancia y calidad en cada detalle.",
     slug: "pijama-pantalon-largo-manga-corta-pima-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -347,6 +385,8 @@ const PRODUCTS: Product[] = [
   {
     id: 20,
     name: "Pijama Pantalón Largo M/corta Pima Hombre",
+    description:
+      "La pijama Pima más exclusiva con pantalón largo y manga corta. Confeccionada en algodón premium, ofrece confort y elegancia. Perfecta para noches de descanso excepcional.",
     slug: "pijama-pantalon-largo-manga-corta-pima-hombre",
     price: 35,
     gender: GENDERS.man,
@@ -364,6 +404,8 @@ const PRODUCTS: Product[] = [
   {
     id: 21,
     name: "Pijama Algodón Dama Chavo",
+    description:
+      "Nuestra exclusiva pijama de algodón con estilo chavo. Diseñada para ofrecer confort y frescura con un toque divertido. Perfecta para noches de descanso con personalidad.",
     slug: "pijama-algodon-dama-chavo",
     price: 22,
     gender: GENDERS.woman,
@@ -382,6 +424,8 @@ const PRODUCTS: Product[] = [
   {
     id: 22,
     name: "Pijama Pima Dama Chavo",
+    description:
+      "Una pijama de lujo en algodón Pima con estilo chavo. Confeccionada para brindar máxima suavidad y confort con un toque especial. Elegancia y diversión en cada detalle.",
     slug: "pijama-pima-dama-chavo",
     price: 30,
     gender: GENDERS.woman,
@@ -400,6 +444,8 @@ const PRODUCTS: Product[] = [
   {
     id: 23,
     name: "Pijama Short Algodón Dama",
+    description:
+      "La pijama más fresca y versátil para la mujer moderna. Diseñada en suave algodón con short, ofrece confort y estilo. Ideal para noches cálidas y descanso plácido.",
     slug: "pijama-short-algodon-dama",
     price: 25,
     gender: GENDERS.woman,
@@ -418,6 +464,8 @@ const PRODUCTS: Product[] = [
   {
     id: 24,
     name: "Pijama Short Algodón Hombre",
+    description:
+      "Nuestra exclusiva pijama de algodón con short para el hombre. Confeccionada para brindar frescura y confort. Perfecta para noches de verano y descanso plácido.",
     slug: "pijama-short-algodon-hombre",
     price: 23,
     gender: GENDERS.man,
@@ -435,6 +483,8 @@ const PRODUCTS: Product[] = [
   {
     id: 25,
     name: "Pijama Short Algodón Niño",
+    description:
+      "Una pijama divertida y fresca para los pequeños aventureros. Diseñada en suave algodón con short, ofrece confort y libertad de movimiento. Ideal para noches de verano.",
     slug: "pijama-short-algodon-nino",
     price: 15,
     gender: GENDERS.boy,
@@ -452,6 +502,8 @@ const PRODUCTS: Product[] = [
   {
     id: 26,
     name: "Pijama Short Algodón Niña",
+    description:
+      "La pijama más adorable con short para las princesas. Confeccionada en suave algodón, combina frescura y estilo. Perfecta para noches cálidas y confortables.",
     slug: "pijama-short-algodon-nina",
     price: 15,
     gender: GENDERS.girl,
@@ -470,6 +522,8 @@ const PRODUCTS: Product[] = [
   {
     id: 27,
     name: "Pijama Short Pima Dama",
+    description:
+      "Una pijama de lujo en algodón Pima con short. Diseñada para brindar máxima suavidad y frescura. Elegancia y confort en cada momento.",
     slug: "pijama-short-pima-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -489,6 +543,8 @@ const PRODUCTS: Product[] = [
   {
     id: 28,
     name: "Pijama Short Pima Hombre",
+    description:
+      "La pijama Pima más exclusiva con short para el hombre. Confeccionada en algodón premium, ofrece frescura y elegancia. Perfecta para noches de verano con estilo.",
     slug: "pijama-short-pima-hombre",
     price: 35,
     gender: GENDERS.man,
@@ -507,6 +563,8 @@ const PRODUCTS: Product[] = [
   {
     id: 29,
     name: "Pijama Short Pima Niño",
+    description:
+      "Una pijama premium en algodón Pima con short para los pequeños. Diseñada para ofrecer suavidad y frescura excepcional. Ideal para noches de verano con confort.",
     slug: "pijama-short-pima-nino",
     price: 20,
     gender: GENDERS.boy,
@@ -524,6 +582,8 @@ const PRODUCTS: Product[] = [
   {
     id: 30,
     name: "Pijama Short Pima Niña",
+    description:
+      "La pijama más elegante con short para las princesas. Confeccionada en suave algodón Pima, combina frescura y estilo. Perfecta para noches cálidas con distinción.",
     slug: "pijama-short-pima-nina",
     price: 20,
     gender: GENDERS.girl,
@@ -541,6 +601,8 @@ const PRODUCTS: Product[] = [
   {
     id: 31,
     name: "Pijama Juego Manga Corta Algodón",
+    description:
+      "Nuestra exclusiva pijama juego de manga corta en algodón. Diseñada para ofrecer confort y estilo en cada momento. Perfecta combinación de frescura y elegancia para la mujer moderna.",
     slug: "pijama-juego-manga-corta-algodon",
     price: 30,
     gender: GENDERS.woman,
@@ -559,6 +621,8 @@ const PRODUCTS: Product[] = [
   {
     id: 32,
     name: "Pijama Juego Manga Corta Algodón",
+    description:
+      "La pijama juego más versátil en algodón para talla XL. Confeccionada con manga corta, ofrece confort y estilo. Ideal para noches de descanso plácido con máxima comodidad.",
     slug: "pijama-juego-manga-corta-algodon-xl",
     price: 36,
     gender: GENDERS.woman,
@@ -577,6 +641,8 @@ const PRODUCTS: Product[] = [
   {
     id: 33,
     name: "Pijama Juego Manga Larga Algodón",
+    description:
+      "Una pijama juego elegante de manga larga en algodón. Diseñada para brindar confort y estilo en cada momento. Perfecta para noches frescas con distinción.",
     slug: "pijama-juego-manga-larga-algodon",
     price: 32,
     gender: GENDERS.woman,
@@ -595,6 +661,8 @@ const PRODUCTS: Product[] = [
   {
     id: 34,
     name: "Pijama Juego Manga Larga Algodón",
+    description:
+      "La pijama juego más sofisticada de manga larga en talla XL. Confeccionada en suave algodón, ofrece confort y elegancia. Ideal para noches de invierno con estilo.",
     slug: "pijama-juego-manga-larga-algodon-xl",
     price: 40,
     gender: GENDERS.woman,
@@ -613,6 +681,8 @@ const PRODUCTS: Product[] = [
   {
     id: 35,
     name: "Pijama Juego Pima Manga Larga",
+    description:
+      "Una pijama juego de lujo en algodón Pima con manga larga. Diseñada para ofrecer máxima suavidad y confort. Elegancia y calidad en cada detalle.",
     slug: "pijama-juego-pima-manga-larga",
     price: 45,
     gender: GENDERS.woman,
@@ -630,6 +700,8 @@ const PRODUCTS: Product[] = [
   {
     id: 36,
     name: "Pijama Juego Pima Manga Corta",
+    description:
+      "La pijama juego más exclusiva en algodón Pima con manga corta. Confeccionada para brindar frescura y elegancia. Perfecta para noches de verano con distinción.",
     slug: "pijama-juego-pima-manga-corta",
     price: 43,
     gender: GENDERS.woman,
@@ -647,6 +719,8 @@ const PRODUCTS: Product[] = [
   {
     id: 37,
     name: "Pijama Juego 3 Piezas",
+    description:
+      "Nuestra exclusiva pijama juego de 3 piezas. Diseñada para ofrecer versatilidad y estilo en cada momento. Perfecta combinación de confort y elegancia para la mujer moderna.",
     slug: "pijama-juego-3-piezas",
     price: 30,
     gender: GENDERS.woman,
@@ -665,6 +739,8 @@ const PRODUCTS: Product[] = [
   {
     id: 38,
     name: "Pijama Bata Algodón Manga Corta",
+    description:
+      "Una bata-pijama versátil de manga corta en algodón. Confeccionada para brindar confort y frescura. Ideal para noches cálidas con estilo casual.",
     slug: "pijama-bata-algodon-manga-corta",
     price: 17,
     gender: GENDERS.woman,
@@ -683,6 +759,8 @@ const PRODUCTS: Product[] = [
   {
     id: 39,
     name: "Pijama Bata Algodón Manga Larga",
+    description:
+      "La bata-pijama más elegante de manga larga en algodón. Diseñada para ofrecer confort y estilo. Perfecta para noches frescas con distinción.",
     slug: "pijama-bata-algodon-manga-larga",
     price: 18,
     gender: GENDERS.woman,
@@ -701,6 +779,8 @@ const PRODUCTS: Product[] = [
   {
     id: 40,
     name: "Pijama Bata Franela",
+    description:
+      "Una bata-pijama acogedora en suave franela. Confeccionada para brindar calor y confort. Ideal para noches frías con un toque de elegancia.",
     slug: "pijama-bata-franela",
     price: 27,
     gender: GENDERS.woman,
@@ -719,6 +799,8 @@ const PRODUCTS: Product[] = [
   {
     id: 41,
     name: "Pijama Bata Polar",
+    description:
+      "Una bata-pijama acogedora en suave polar. Diseñada para brindar máxima calidez y confort. Perfecta para noches frías con un toque de elegancia.",
     slug: "pijama-bata-polar",
     price: 25,
     gender: GENDERS.woman,
@@ -736,6 +818,8 @@ const PRODUCTS: Product[] = [
   {
     id: 42,
     name: "Pijama Bata Polar Levantar Hombre",
+    description:
+      "La bata-pijama más exclusiva en polar con diseño levantar. Confeccionada para ofrecer calidez y estilo. Ideal para noches de invierno con distinción.",
     slug: "pijama-bata-polar-levantar-hombre",
     price: 40,
     gender: GENDERS.man,
@@ -755,6 +839,8 @@ const PRODUCTS: Product[] = [
     id: 43,
     favorite: true,
     name: "Pijama Bata Polar Levantar Dama",
+    description:
+      "Nuestra exclusiva bata-pijama en polar con diseño levantar. Diseñada para brindar máxima calidez y elegancia. Perfecta para noches frías con estilo sofisticado.",
     slug: "pijama-bata-polar-levantar-dama",
     price: 40,
     gender: GENDERS.woman,
@@ -772,6 +858,8 @@ const PRODUCTS: Product[] = [
   {
     id: 44,
     name: "Pijama Bata Algodón Levantar Hombre",
+    description:
+      "Una bata-pijama versátil en algodón con diseño levantar. Confeccionada para ofrecer confort y estilo. Ideal para noches frescas con distinción.",
     slug: "pijama-bata-algodon-levantar-hombre",
     price: 27,
     gender: GENDERS.man,
@@ -789,6 +877,8 @@ const PRODUCTS: Product[] = [
   {
     id: 45,
     name: "Pijama Bata Algodón Levantar Dama",
+    description:
+      "La bata-pijama más elegante en algodón con diseño levantar. Diseñada para brindar confort y sofisticación. Perfecta para noches de descanso con estilo.",
     slug: "pijama-bata-algodon-levantar-dama",
     price: 27,
     gender: GENDERS.woman,
@@ -806,6 +896,8 @@ const PRODUCTS: Product[] = [
   {
     id: 46,
     name: "Pijama Bata Felpa Hombre",
+    description:
+      "Una bata-pijama acogedora en suave felpa. Confeccionada para brindar calor y confort excepcional. Ideal para noches frías con un toque de elegancia.",
     slug: "pijama-bata-felpa-hombre",
     price: 40,
     gender: GENDERS.man,
@@ -823,6 +915,8 @@ const PRODUCTS: Product[] = [
   {
     id: 47,
     name: "Pijama Bata Felpa Dama",
+    description:
+      "La bata-pijama más confortable en suave felpa. Diseñada para ofrecer máxima calidez y estilo. Perfecta para noches de invierno con distinción.",
     slug: "pijama-bata-felpa-dama",
     price: 40,
     gender: GENDERS.woman,
@@ -840,6 +934,8 @@ const PRODUCTS: Product[] = [
   {
     id: 48,
     name: "Pijama Pima Niño #16",
+    description:
+      "Una pijama de lujo en algodón Pima para adolescentes. Confeccionada para brindar suavidad y confort. Ideal para noches de descanso con estilo.",
     slug: "pijama-pima-nino-16",
     price: 32,
     gender: GENDERS.boy,
@@ -857,6 +953,8 @@ const PRODUCTS: Product[] = [
   {
     id: 49,
     name: "Pijama Pima Niña #16",
+    description:
+      "La pijama más elegante en algodón Pima para adolescentes. Diseñada para ofrecer confort y sofisticación. Perfecta para noches de descanso con distinción.",
     slug: "pijama-pima-nina-16",
     price: 32,
     gender: GENDERS.girl,
@@ -870,6 +968,8 @@ const PRODUCTS: Product[] = [
     id: 50,
     favorite: true,
     name: "Pijama Algodón Niño #16",
+    description:
+      "Una pijama versátil en algodón para adolescentes. Confeccionada para brindar confort y frescura. Ideal para noches de descanso con estilo casual.",
     slug: "pijama-algodon-nino-16",
     price: 22,
     gender: GENDERS.boy,
@@ -887,6 +987,8 @@ const PRODUCTS: Product[] = [
   {
     id: 51,
     name: "Pijama Algodón Niña #16",
+    description:
+      "Una pijama versátil en algodón para adolescentes. Confeccionada para brindar confort y frescura. Ideal para noches de descanso con estilo casual.",
     slug: "pijama-algodon-nina-16",
     price: 22,
     gender: GENDERS.girl,
@@ -904,6 +1006,8 @@ const PRODUCTS: Product[] = [
   {
     id: 52,
     name: "Pijama Polar Niño #16",
+    description:
+      "La pijama polar más acogedora para adolescentes. Diseñada para ofrecer máxima calidez y confort. Perfecta para noches frías con estilo juvenil.",
     slug: "pijama-polar-nino-16",
     price: 23,
     gender: GENDERS.boy,
@@ -921,6 +1025,8 @@ const PRODUCTS: Product[] = [
   {
     id: 53,
     name: "Pijama Polar Niña #16",
+    description:
+      "Una pijama polar elegante para adolescentes. Confeccionada en suave polar, combina calidez y estilo. Ideal para noches frescas con distinción.",
     slug: "pijama-polar-nina-16",
     price: 23,
     gender: GENDERS.girl,
@@ -938,6 +1044,8 @@ const PRODUCTS: Product[] = [
   {
     id: 54,
     name: "Pijama Short Pima #16",
+    description:
+      "La pijama más fresca y versátil para adolescentes. Diseñada en algodón Pima con short, ofrece confort y estilo. Perfecta para noches de verano.",
     slug: "pijama-short-pima-16",
     price: 30,
     gender: GENDERS.boy,
@@ -955,6 +1063,8 @@ const PRODUCTS: Product[] = [
   {
     id: 55,
     name: "Juego Chamús Dama",
+    description:
+      "Nuestro exclusivo juego de chamús para la mujer moderna. Diseñado para ofrecer máxima suavidad y confort. Elegancia y calidad en cada detalle.",
     slug: "juego-chamus-dama",
     price: 55,
     gender: GENDERS.woman,
@@ -972,6 +1082,8 @@ const PRODUCTS: Product[] = [
     id: 56,
     favorite: true,
     name: "Juego Chamús Short Dama",
+    description:
+      "El juego de chamús más versátil con short para la mujer. Confeccionado para brindar frescura y confort. Ideal para noches cálidas con estilo.",
     slug: "juego-chamus-short-dama",
     price: 40,
     gender: GENDERS.woman,
@@ -988,6 +1100,8 @@ const PRODUCTS: Product[] = [
   {
     id: 57,
     name: "Pijama Abierta Algodón Hombre",
+    description:
+      "Una pijama abierta versátil en algodón para el hombre. Diseñada para ofrecer confort y estilo. Perfecta para noches de descanso plácido.",
     slug: "pijama-abierta-algodon-hombre",
     price: 32,
     gender: GENDERS.man,
@@ -1005,6 +1119,8 @@ const PRODUCTS: Product[] = [
   {
     id: 58,
     name: "Pijama Abierta Algodón Dama",
+    description:
+      "La pijama abierta más elegante en algodón para la mujer. Confeccionada para brindar confort y sofisticación. Ideal para noches de descanso con distinción.",
     slug: "pijama-abierta-algodon-dama",
     price: 32,
     gender: GENDERS.woman,
@@ -1022,6 +1138,8 @@ const PRODUCTS: Product[] = [
   {
     id: 59,
     name: "Pijama Abierta Algodón Manga Corta Pantalón Largo Hombre",
+    description:
+      "Una pijama abierta versátil con manga corta y pantalón largo. Diseñada en suave algodón, ofrece confort y estilo. Perfecta para noches de descanso con elegancia.",
     slug: "pijama-abierta-algodon-manga-corta-pantalon-largo-hombre",
     price: 30,
     gender: GENDERS.man,
@@ -1040,6 +1158,8 @@ const PRODUCTS: Product[] = [
     id: 60,
     favorite: true,
     name: "Pijama Abierta Algodón Manga Corta Pantalón Largo Dama",
+    description:
+      "La pijama abierta más sofisticada con manga corta y pantalón largo. Confeccionada en algodón premium, combina confort y elegancia. Ideal para noches de descanso con distinción.",
     slug: "pijama-abierta-algodon-manga-corta-pantalon-largo-dama",
     price: 30,
     gender: GENDERS.woman,
@@ -1057,6 +1177,8 @@ const PRODUCTS: Product[] = [
   {
     id: 61,
     name: "Pijama Abierta Franela Hombre",
+    description:
+      "Una pijama abierta acogedora en suave franela para el hombre. Diseñada para brindar calor y confort. Perfecta para noches frías con un toque de elegancia.",
     slug: "pijama-abierta-franela-hombre",
     price: 40,
     gender: GENDERS.man,
@@ -1075,6 +1197,8 @@ const PRODUCTS: Product[] = [
   {
     id: 62,
     name: "Pijama Abierta Franela Dama",
+    description:
+      "La pijama abierta más confortable en suave franela para la mujer. Confeccionada para ofrecer máxima calidez y estilo. Ideal para noches de invierno con distinción.",
     slug: "pijama-abierta-franela-dama",
     price: 40,
     gender: GENDERS.woman,
@@ -1094,6 +1218,8 @@ const PRODUCTS: Product[] = [
   {
     id: 63,
     name: "Pijama Abierta Polar Hombre",
+    description:
+      "Una pijama abierta versátil en polar para el hombre. Diseñada para brindar confort y calidez. Perfecta para noches frescas con estilo casual.",
     slug: "pijama-abierta-polar-hombre",
     price: 35,
     gender: GENDERS.man,
@@ -1113,6 +1239,8 @@ const PRODUCTS: Product[] = [
   {
     id: 64,
     name: "Pijama Abierta Polar Dama",
+    description:
+      "La pijama abierta más elegante en polar para la mujer. Confeccionada para ofrecer confort y sofisticación. Ideal para noches frescas con distinción.",
     slug: "pijama-abierta-polar-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -1130,6 +1258,8 @@ const PRODUCTS: Product[] = [
   {
     id: 65,
     name: "Pijama Polar XL Hombre",
+    description:
+      "Una pijama polar versátil en talla XL para el hombre. Diseñada para brindar máxima calidez y confort. Perfecta para noches frías con estilo casual.",
     slug: "pijama-polar-xl-hombre",
     price: 32,
     gender: GENDERS.man,
@@ -1148,6 +1278,8 @@ const PRODUCTS: Product[] = [
   {
     id: 66,
     name: "Pijama Polar XL Dama",
+    description:
+      "La pijama polar más confortable en talla XL para la mujer. Confeccionada para ofrecer calidez y elegancia. Ideal para noches de invierno con distinción.",
     slug: "pijama-polar-xl-dama",
     price: 32,
     gender: GENDERS.woman,
@@ -1166,6 +1298,8 @@ const PRODUCTS: Product[] = [
   {
     id: 67,
     name: "Pijama Franela XL Hombre",
+    description:
+      "Una pijama de franela acogedora en talla XL para el hombre. Diseñada para brindar calor y confort excepcional. Perfecta para noches frías con un toque de elegancia.",
     slug: "pijama-franela-xl-hombre",
     price: 45,
     gender: GENDERS.man,
@@ -1184,6 +1318,8 @@ const PRODUCTS: Product[] = [
   {
     id: 68,
     name: "Pijama Franela XL Dama",
+    description:
+      "La pijama de franela más elegante en talla XL para la mujer. Confeccionada para ofrecer máxima calidez y estilo. Ideal para noches de invierno con distinción.",
     slug: "pijama-franela-xl-dama",
     price: 45,
     gender: GENDERS.woman,
@@ -1202,6 +1338,8 @@ const PRODUCTS: Product[] = [
   {
     id: 69,
     name: "Pijama Polar Abierta XL Hombre",
+    description:
+      "Una pijama polar abierta versátil en talla XL para el hombre. Diseñada para brindar confort y calidez. Perfecta para noches frescas con estilo casual.",
     slug: "pijama-polar-abierta-xl-hombre",
     price: 37,
     gender: GENDERS.man,
@@ -1220,6 +1358,8 @@ const PRODUCTS: Product[] = [
   {
     id: 70,
     name: "Pijama Polar Abierta XL Dama",
+    description:
+      "La pijama polar abierta más elegante en talla XL para la mujer. Confeccionada para ofrecer confort y sofisticación. Ideal para noches frescas con distinción.",
     slug: "pijama-polar-abierta-xl-dama",
     price: 37,
     gender: GENDERS.woman,
@@ -1238,6 +1378,8 @@ const PRODUCTS: Product[] = [
   {
     id: 71,
     name: "Pijama Bata y Camisón Polar XL",
+    description:
+      "Nuestro exclusivo conjunto de bata y camisón en polar para talla XL. Diseñado para brindar máxima calidez y confort. Perfecta combinación de elegancia y funcionalidad para noches frías.",
     slug: "pijama-bata-y-camison-polar-xl",
     price: 28,
     gender: GENDERS.woman,
@@ -1256,6 +1398,8 @@ const PRODUCTS: Product[] = [
   {
     id: 72,
     name: "Pijama Algodón Manga Larga XL Hombre",
+    description:
+      "Una pijama versátil de manga larga en algodón para talla XL. Confeccionada para ofrecer confort y estilo. Ideal para noches frescas con elegancia casual.",
     slug: "pijama-algodon-manga-larga-xl-hombre",
     price: 32,
     gender: GENDERS.man,
@@ -1274,6 +1418,8 @@ const PRODUCTS: Product[] = [
   {
     id: 73,
     name: "Pijama Algodón Manga Larga XL Dama",
+    description:
+      "La pijama más elegante de manga larga en algodón para talla XL. Diseñada para brindar confort y sofisticación. Perfecta para noches frescas con distinción.",
     slug: "pijama-algodon-manga-larga-xl-dama",
     price: 32,
     gender: GENDERS.woman,
@@ -1293,6 +1439,8 @@ const PRODUCTS: Product[] = [
     id: 74,
     disabled: true,
     name: "Pijama Peluche Dama",
+    description:
+      "Una pijama acogedora en suave peluche para la mujer. Diseñada para brindar máxima calidez y confort. Perfecta para noches frías con un toque de elegancia.",
     slug: "pijama-peluche-dama",
     price: 0,
     gender: GENDERS.woman,
@@ -1306,6 +1454,8 @@ const PRODUCTS: Product[] = [
     id: 75,
     disabled: true,
     name: "Pijama Peluche Salida Dama",
+    description:
+      "La pijama de peluche más versátil para salidas casuales. Confeccionada para ofrecer confort y estilo. Ideal para noches frescas con distinción.",
     slug: "pijama-peluche-salida-dama",
     price: 0,
     gender: GENDERS.woman,
@@ -1318,6 +1468,8 @@ const PRODUCTS: Product[] = [
   {
     id: 76,
     name: "Pijama Short Algodón XL Hombre",
+    description:
+      "Una pijama fresca y versátil con short en algodón para talla XL. Diseñada para brindar confort y estilo. Perfecta para noches cálidas con elegancia casual.",
     slug: "pijama-short-algodon-xl-hombre",
     price: 28,
     gender: GENDERS.man,
@@ -1336,6 +1488,8 @@ const PRODUCTS: Product[] = [
   {
     id: 77,
     name: "Pijama Short Algodón XL Dama",
+    description:
+      "La pijama más elegante con short en algodón para talla XL. Confeccionada para ofrecer frescura y sofisticación. Ideal para noches cálidas con distinción.",
     slug: "pijama-short-algodon-xl-dama",
     price: 28,
     gender: GENDERS.woman,
@@ -1354,6 +1508,8 @@ const PRODUCTS: Product[] = [
   {
     id: 78,
     name: "Pijama Short Algodón #16 Niño",
+    description:
+      "Una pijama divertida y fresca con short en algodón para adolescentes. Diseñada para brindar confort y libertad de movimiento. Perfecta para noches de verano con estilo juvenil.",
     slug: "pijama-short-algodon-16-nino",
     price: 17,
     gender: GENDERS.boy,
@@ -1372,6 +1528,8 @@ const PRODUCTS: Product[] = [
   {
     id: 79,
     name: "Pijama Short Algodón #16 Niña",
+    description:
+      "La pijama más adorable con short en algodón para adolescentes. Confeccionada para ofrecer frescura y estilo. Ideal para noches cálidas con distinción juvenil.",
     slug: "pijama-short-algodon-16-nina",
     price: 17,
     gender: GENDERS.girl,
@@ -1390,6 +1548,8 @@ const PRODUCTS: Product[] = [
   {
     id: 80,
     name: "Pijama Franela #16 Niño",
+    description:
+      "Una pijama acogedora en suave franela para adolescentes. Diseñada para brindar calor y confort. Perfecta para noches frías con estilo casual.",
     slug: "pijama-franela-16-nino",
     price: 30,
     gender: GENDERS.boy,
@@ -1408,6 +1568,8 @@ const PRODUCTS: Product[] = [
   {
     id: 81,
     name: "Pijama Franela #16 Niña",
+    description:
+      "La pijama más acogedora en suave franela para adolescentes. Confeccionada para brindar calor y confort. Ideal para noches frías con un toque de elegancia juvenil.",
     slug: "pijama-franela-16-nina",
     price: 30,
     gender: GENDERS.girl,
@@ -1426,6 +1588,8 @@ const PRODUCTS: Product[] = [
   {
     id: 82,
     name: "Pijama Bata Algodón XL Manga Corta",
+    description:
+      "Una bata-pijama versátil de manga corta en algodón para talla XL. Diseñada para ofrecer confort y frescura. Perfecta para noches cálidas con estilo casual.",
     slug: "pijama-bata-algodon-xl-manga-corta",
     price: 25,
     gender: GENDERS.woman,
@@ -1444,6 +1608,8 @@ const PRODUCTS: Product[] = [
   {
     id: 83,
     name: "Pijama Bata Algodón XL Manga Larga",
+    description:
+      "La bata-pijama más elegante de manga larga en algodón para talla XL. Confeccionada para brindar confort y sofisticación. Ideal para noches frescas con distinción.",
     slug: "pijama-bata-algodon-xl-manga-larga",
     price: 27,
     gender: GENDERS.woman,
@@ -1462,6 +1628,8 @@ const PRODUCTS: Product[] = [
   {
     id: 84,
     name: "Pijama Algodón Manga Corta Pantalón Largo XL Hombre",
+    description:
+      "Una pijama versátil con manga corta y pantalón largo en algodón para talla XL. Diseñada para ofrecer confort y estilo. Perfecta para noches de descanso con elegancia casual.",
     slug: "pijama-algodon-manga-corta-pantalon-largo-xl-hombre",
     price: 32,
     gender: GENDERS.man,
@@ -1480,6 +1648,8 @@ const PRODUCTS: Product[] = [
   {
     id: 85,
     name: "Pijama Algodón Manga Corta Pantalón Largo XL Dama",
+    description:
+      "La pijama más sofisticada con manga corta y pantalón largo en algodón para talla XL. Confeccionada para brindar confort y elegancia. Ideal para noches de descanso con distinción.",
     slug: "pijama-algodon-manga-corta-pantalon-largo-xl-dama",
     price: 32,
     gender: GENDERS.woman,
@@ -1499,6 +1669,8 @@ const PRODUCTS: Product[] = [
     id: 86,
     disabled: true,
     name: "Pijama Short Pima XL Hombre",
+    description:
+      "Una pijama de lujo con short en algodón Pima para talla XL. Diseñada para brindar frescura y confort. Perfecta para noches cálidas con estilo casual.",
     slug: "pijama-short-pima-xl-hombre",
     price: 35,
     gender: GENDERS.man,
@@ -1511,6 +1683,8 @@ const PRODUCTS: Product[] = [
   {
     id: 87,
     name: "Pijama Short Pima XL Dama",
+    description:
+      "La pijama más elegante con short en algodón Pima para talla XL. Confeccionada para ofrecer frescura y sofisticación. Ideal para noches cálidas con distinción.",
     slug: "pijama-short-pima-xl-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -1528,6 +1702,8 @@ const PRODUCTS: Product[] = [
   {
     id: 88,
     name: "Pijama Short Algodón Abierta Hombre",
+    description:
+      "Una pijama abierta versátil con short en algodón para el hombre. Diseñada para brindar confort y frescura. Perfecta para noches cálidas con estilo casual.",
     slug: "pijama-short-algodon-abierta-hombre",
     price: 27,
     gender: GENDERS.man,
@@ -1546,6 +1722,8 @@ const PRODUCTS: Product[] = [
   {
     id: 89,
     name: "Pijama Short Algodón Abierta Dama",
+    description:
+      "La pijama abierta más elegante con short en algodón para la mujer. Confeccionada para ofrecer frescura y sofisticación. Ideal para noches cálidas con distinción.",
     slug: "pijama-short-algodon-abierta-dama",
     price: 27,
     gender: GENDERS.woman,
@@ -1564,6 +1742,8 @@ const PRODUCTS: Product[] = [
   {
     id: 90,
     name: "Pijama Algodón Manga Corta Pantalón Largo Abierta Hombre",
+    description:
+      "Una pijama abierta versátil con manga corta y pantalón largo en algodón. Diseñada para brindar confort y estilo. Perfecta para noches de descanso con elegancia casual.",
     slug: "pijama-algodon-manga-corta-pantalon-largo-abierta-hombre",
     price: 35,
     gender: GENDERS.man,
@@ -1582,6 +1762,8 @@ const PRODUCTS: Product[] = [
   {
     id: 91,
     name: "Pijama Algodón Manga Corta Pantalón Largo Abierta Dama",
+    description:
+      "La pijama abierta más sofisticada con manga corta y pantalón largo en algodón. Confeccionada para brindar confort y elegancia. Ideal para noches de descanso con distinción.",
     slug: "pijama-algodon-manga-corta-pantalon-largo-abierta-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -1600,6 +1782,8 @@ const PRODUCTS: Product[] = [
   {
     id: 92,
     name: "Pijama Algodón Manga Larga XL Abierta Hombre",
+    description:
+      "Una pijama abierta versátil de manga larga en algodón para talla XL. Diseñada para ofrecer confort y estilo. Perfecta para noches frescas con elegancia casual.",
     slug: "pijama-algodon-manga-larga-xl-abierta-hombre",
     price: 35,
     gender: GENDERS.man,
@@ -1618,6 +1802,8 @@ const PRODUCTS: Product[] = [
   {
     id: 93,
     name: "Pijama Algodón Manga Larga XL Abierta Dama",
+    description:
+      "La pijama abierta más elegante de manga larga en algodón para talla XL. Confeccionada para brindar confort y sofisticación. Ideal para noches frescas con distinción.",
     slug: "pijama-algodon-manga-larga-xl-abierta-dama",
     price: 35,
     gender: GENDERS.woman,
@@ -1636,6 +1822,8 @@ const PRODUCTS: Product[] = [
   {
     id: 94,
     name: "Bata Franela XL",
+    description:
+      "Una bata acogedora en suave franela para talla XL. Diseñada para brindar calor y confort. Perfecta para noches frías con un toque de elegancia.",
     slug: "bata-franela-xl",
     price: 28,
     gender: GENDERS.woman,
@@ -1654,6 +1842,8 @@ const PRODUCTS: Product[] = [
     id: 95,
     disabled: true,
     name: "Franela Bebé Pima",
+    description:
+      "Una franela de lujo en algodón Pima para los más pequeños. Confeccionada para brindar suavidad y confort. Ideal para el descanso de los bebés con calidad premium.",
     slug: "franela-bebe-pima",
     price: 22,
     gender: GENDERS.baby,
@@ -1666,6 +1856,8 @@ const PRODUCTS: Product[] = [
   {
     id: 96,
     name: "Pima Abierto Dama",
+    description:
+      "La pijama más exclusiva en algodón Pima con diseño abierto. Diseñada para ofrecer máxima suavidad y confort. Perfecta para noches de descanso con distinción.",
     slug: "pima-abierto-dama",
     price: 37,
     gender: GENDERS.woman,
@@ -1683,6 +1875,8 @@ const PRODUCTS: Product[] = [
   {
     id: 97,
     name: "Pijama Franela XL Abierta Hombre",
+    description:
+      "Una pijama abierta acogedora en suave franela para talla XL. Confeccionada para brindar calor y confort. Ideal para noches frías con estilo casual.",
     slug: "pijama-franela-xl-abierta-hombre",
     price: 45,
     gender: GENDERS.man,
@@ -1701,6 +1895,8 @@ const PRODUCTS: Product[] = [
   {
     id: 98,
     name: "Pijama Franela XL Abierta Dama",
+    description:
+      "La pijama abierta más elegante en suave franela para talla XL. Diseñada para ofrecer máxima calidez y sofisticación. Perfecta para noches de invierno con distinción.",
     slug: "pijama-franela-xl-abierta-dama",
     price: 45,
     gender: GENDERS.woman,
@@ -1720,6 +1916,8 @@ const PRODUCTS: Product[] = [
     id: 99,
     disabled: true,
     name: "Pijama Pima XL Hombre",
+    description:
+      "Una pijama de lujo en algodón Pima para talla XL. Confeccionada para brindar máxima suavidad y confort. Ideal para noches de descanso con estilo premium.",
     slug: "pijama-pima-xl-hombre",
     price: 45,
     gender: GENDERS.man,
@@ -1732,6 +1930,8 @@ const PRODUCTS: Product[] = [
   {
     id: 100,
     name: "Pijama Pima XL Dama",
+    description:
+      "La pijama más exclusiva en algodón Pima para talla XL. Diseñada para ofrecer suavidad superior y elegancia. Perfecta para noches de descanso con distinción.",
     slug: "pijama-pima-xl-dama",
     price: 45,
     gender: GENDERS.woman,
@@ -1749,6 +1949,8 @@ const PRODUCTS: Product[] = [
   {
     id: 101,
     name: "Pijama Abierta Niños Algodón",
+    description:
+      "Una pijama abierta versátil en algodón para los pequeños. Confeccionada para brindar confort y libertad de movimiento. Ideal para noches de descanso con estilo casual.",
     slug: "pijama-abierta-ninos-algodon",
     price: 25,
     gender: GENDERS.boy,
