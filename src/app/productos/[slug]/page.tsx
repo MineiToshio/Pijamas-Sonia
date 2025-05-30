@@ -3,13 +3,13 @@ import ProductDetails from "@/components/ProductDetails";
 import { INVENTORY } from "@/utils/inventory";
 import { notFound } from "next/navigation";
 
-type pageProps = {
-  params: {
+type PageProps = {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-const page = async ({ params }: pageProps) => {
+const page = async ({ params }: PageProps) => {
   const { slug } = await params;
   const product = INVENTORY.find((i) => i.slug === slug);
 
