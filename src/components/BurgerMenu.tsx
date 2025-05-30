@@ -1,5 +1,4 @@
 import { BUSINESS, MENU_LINKS } from "@/utils/constants";
-import Link from "next/link";
 import { FC, Fragment } from "react";
 
 const BurgerMenu: FC = ({}) => {
@@ -11,7 +10,7 @@ const BurgerMenu: FC = ({}) => {
           <ul className="nav-ul-mb" id="wrapper-menu-navigation">
             {MENU_LINKS.map((link) => (
               <li className="nav-mb-item" key={link.id}>
-                <Link
+                <a
                   href={link.subMenu ? `#${link.id}` : link.url}
                   className={`mb-menu-link ${link.subMenu ? "collapsed current" : ""}`}
                   {...(link.subMenu && {
@@ -22,15 +21,15 @@ const BurgerMenu: FC = ({}) => {
                 >
                   <span>{link.name}</span>
                   {link.subMenu && <span className="btn-open-sub" />}
-                </Link>
+                </a>
                 {link.subMenu && (
                   <div id={link.id} className="collapse">
                     <ul className="sub-nav-menu">
                       {link.subMenu.map((menu) => (
                         <li key={menu.id}>
-                          <Link href={menu.url} className="sub-nav-link">
+                          <a href={menu.url} className="sub-nav-link">
                             {menu.name}
-                          </Link>
+                          </a>
                         </li>
                       ))}
                     </ul>
@@ -41,9 +40,9 @@ const BurgerMenu: FC = ({}) => {
           </ul>
           <div className="mb-other-content">
             <div className="mb-notice">
-              <Link href="/contact" className="text-need">
+              <a href="/contact" className="text-need">
                 Visita nuestras tiendas
-              </Link>
+              </a>
             </div>
             <ul className="mb-info">
               {BUSINESS.stores.map((store) => (

@@ -1,5 +1,4 @@
 import { BUSINESS, MENU_LINKS } from "@/utils/constants";
-import Link from "next/link";
 import { FC } from "react";
 
 const Footer: FC = ({}) => {
@@ -19,12 +18,12 @@ const Footer: FC = ({}) => {
                       <p>Teléfono: {BUSINESS.contact.phone}</p>
                     </li>
                   </ul>
-                  <Link href="/contacto" className="tf-btn btn-line">
+                  <a href="/contacto" className="tf-btn btn-line">
                     Dirección<i className="icon icon-arrow1-top-left"></i>
-                  </Link>
+                  </a>
                   <ul className="tf-social-icon d-flex gap-10">
                     {BUSINESS.contact.socials.map((social) => (
-                      <Link
+                      <a
                         key={social.name}
                         rel="noopener noreferrer"
                         target="_blank"
@@ -32,7 +31,7 @@ const Footer: FC = ({}) => {
                         className="box-icon w_34 round social-line"
                       >
                         <i className={`icon fs-14 ${social.icon}`}></i>
-                      </Link>
+                      </a>
                     ))}
                   </ul>
                 </div>
@@ -47,9 +46,9 @@ const Footer: FC = ({}) => {
                 <ul className="footer-menu-list tf-collapse-content">
                   {MENU_LINKS.map((link) => (
                     <li key={link.id}>
-                      <Link href={link.url} className="footer-menu_item">
+                      <a href={link.url} className="footer-menu_item">
                         {link.name}
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>

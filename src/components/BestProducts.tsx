@@ -1,5 +1,4 @@
 import { BEST_PRODUCTS } from "@/utils/inventory";
-import Link from "next/link";
 import { FC } from "react";
 
 const BestProducts: FC = () => {
@@ -18,7 +17,7 @@ const BestProducts: FC = () => {
           {BEST_PRODUCTS.map((product) => (
             <div key={product.id} className="card-product fl-item">
               <div className="card-product-wrapper">
-                <Link href={`/productos/${product.slug}`} className="product-img">
+                <a href={`/productos/${product.slug}`} className="product-img">
                   <img
                     className="lazyload img-product"
                     data-src={product.mainImage}
@@ -31,7 +30,7 @@ const BestProducts: FC = () => {
                     src={product.hoverImage}
                     alt="image-product"
                   />
-                </Link>
+                </a>
                 {product.sizes.length > 0 && (
                   <div className="size-list">
                     {product.sizes.map((size) => (
@@ -41,9 +40,9 @@ const BestProducts: FC = () => {
                 )}
               </div>
               <div className="card-product-info">
-                <Link href={`/productos/${product.slug}`} className="title link">
+                <a href={`/productos/${product.slug}`} className="title link">
                   {product.name}
-                </Link>
+                </a>
                 <span className="price">S/{product.price.toFixed(2)}</span>
                 {product.colors.length > 0 && (
                   <ul className="list-color-product">

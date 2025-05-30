@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FC } from "react";
 
 interface CategoryItem {
@@ -95,9 +94,9 @@ const ProductsCarousel: FC = ({}) => {
           <div className="col-xl-3 col-lg-4 col-md-4">
             <div className="discovery-new-item">
               <h5>Revisa nuestro catálogo completo</h5>
-              <Link href="/productos">
+              <a href="/productos">
                 <i className="icon-arrow1-top-left"></i>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

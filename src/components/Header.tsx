@@ -1,5 +1,4 @@
 import { BUSINESS, MENU_LINKS } from "@/utils/constants";
-import Link from "next/link";
 import { FC } from "react";
 
 const Header: FC = ({}) => {
@@ -18,27 +17,27 @@ const Header: FC = ({}) => {
             </a>
           </div>
           <div className="col-xl-3 col-md-4 col-6">
-            <Link href="/" className="logo-header">
+            <a href="/" className="logo-header">
               <img src="/images/logo.png" alt="logo" className="logo" />
-            </Link>
+            </a>
           </div>
           <div className="col-xl-6 tf-md-hidden">
             <nav className="box-navigation text-center">
               <ul className="box-nav-ul d-flex align-items-center justify-content-center gap-30">
                 {MENU_LINKS.map((link) => (
                   <li className={`menu-item ${link.subMenu ? "position-relative" : ""}`} key={link.id}>
-                    <Link href={link.url ?? "#"} className="item-link">
+                    <a href={link.url ?? "#"} className="item-link">
                       {link.name}
                       {link.subMenu && <i className="icon icon-arrow-down"></i>}
-                    </Link>
+                    </a>
                     {link.subMenu && (
                       <div className="sub-menu submenu-default">
                         <ul className="menu-list">
                           {link.subMenu.map((menu) => (
                             <li key={menu.id}>
-                              <Link href={menu.url} className="menu-link-text link text_black-2">
+                              <a href={menu.url} className="menu-link-text link text_black-2">
                                 {menu.name}
-                              </Link>
+                              </a>
                             </li>
                           ))}
                         </ul>
@@ -53,9 +52,9 @@ const Header: FC = ({}) => {
             <ul className="nav-icon d-flex justify-content-end align-items-center gap-20">
               {BUSINESS.contact.socials.map((social) => (
                 <li className="nav-search" key={social.name}>
-                  <Link href={social.url} target="_blank" rel="noopener noreferrer" className="nav-icon-item">
+                  <a href={social.url} target="_blank" rel="noopener noreferrer" className="nav-icon-item">
                     <i className={`icon ${social.icon}`} />
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

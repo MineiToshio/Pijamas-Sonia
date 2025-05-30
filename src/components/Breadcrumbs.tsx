@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FC } from "react";
 
 type BreadcrumbsProps = {
@@ -11,13 +10,13 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({ currentPage }) => {
       <div className="container">
         <div className="tf-breadcrumb-wrap d-flex justify-content-between flex-wrap align-items-center">
           <div className="tf-breadcrumb-list">
-            <Link href="/" className="text">
+            <a href="/" className="text">
               Inicio
-            </Link>
+            </a>
             <i className="icon icon-arrow-right"></i>
-            <Link href="/productos" className="text">
+            <a href="/productos" className="text">
               Productos
-            </Link>
+            </a>
             <i className="icon icon-arrow-right"></i>
             <span className="text">{currentPage}</span>
           </div>

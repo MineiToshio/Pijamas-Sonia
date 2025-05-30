@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FC } from "react";
 
 const SLIDES = [
@@ -46,13 +45,13 @@ const Slider: FC = ({}) => {
                         <div className="box-content">
                           <h1 className="heading fade-item fade-item-1">{slide.title}</h1>
                           <p className="desc fade-item fade-item-2">{slide.text}</p>
-                          <Link
+                          <a
                             href={slide.cta.url}
                             className="fade-item fade-item-3 tf-btn btn-light-icon animate-hover-btn btn-xl radius-3"
                           >
                             <span>{slide.cta.text}</span>
                             <i className="icon icon-arrow-right"></i>
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
