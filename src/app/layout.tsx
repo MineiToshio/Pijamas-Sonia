@@ -26,6 +26,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="/fonts/fonts.css" />
         <link rel="stylesheet" href="/fonts/font-icons.css" />
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/drift-basic.min.css" />
+        <link rel="stylesheet" href="/css/photoswipe.css" />
         <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/css/animate.css" />
         <link rel="stylesheet" type="text/css" href="/css/styles.css" />
@@ -57,9 +59,12 @@ export default function RootLayout({
         <Script type="text/javascript" src="/js/bootstrap-select.min.js" />
         <Script type="text/javascript" src="/js/lazysize.min.js" />
         <Script type="text/javascript" src="/js/count-down.js" />
+        <Script type="text/javascript" src="/js/drift.min.js" />
         <Script type="text/javascript" src="/js/wow.min.js" />
         <Script type="text/javascript" src="/js/multiple-modal.js" />
         <Script type="text/javascript" src="/js/main.js" />
+        <Script type="module" src="/js/model-viewer.min.js" />
+        <Script type="module" src="/js/zoom.js" />
       </body>
     </html>
   );
