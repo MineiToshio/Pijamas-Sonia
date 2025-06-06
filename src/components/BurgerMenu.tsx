@@ -40,7 +40,7 @@ const BurgerMenu: FC = ({}) => {
           </ul>
           <div className="mb-other-content">
             <div className="mb-notice">
-              <a href="/contact" className="text-need">
+              <a href="/contacto" className="text-need">
                 Visita nuestras tiendas
               </a>
             </div>

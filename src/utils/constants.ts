@@ -106,17 +106,17 @@ export const MENU_LINKS: MenuItem[] = [
       {
         id: "men-products-menu",
         name: "Hombres",
-        url: "/products?filter=hombres",
+        url: "/productos?filter=hombres",
       },
       {
         id: "women-products-menu",
         name: "Mujeres",
-        url: "/products?filter=mujeres",
+        url: "/productos?filter=mujeres",
       },
       {
         id: "kids-products-menu",
         name: "Niños",
-        url: "/products?filter=ninos",
+        url: "/productos?filter=ninos",
       },
     ],
   },
