@@ -1,5 +1,6 @@
 import { BEST_PRODUCTS } from "@/utils/inventory";
 import { FC } from "react";
+import ProductCard from "./ProductCard";
 
 const BestProducts: FC = () => {
   return (
@@ -15,48 +16,7 @@ const BestProducts: FC = () => {
         </div>
         <div className="grid-layout loadmore-item wow fadeInUp" data-wow-delay="0s" data-grid="grid-4">
           {BEST_PRODUCTS.map((product) => (
-            <div key={product.id} className="card-product fl-item">
-              <div className="card-product-wrapper">
-                <a href={`/productos/${product.slug}`} className="product-img">
-                  <img
-                    className="lazyload img-product"
-                    data-src={product.mainImage}
-                    src={product.mainImage}
-                    alt="image-product"
-                  />
-                  <img
-                    className="lazyload img-hover"
-                    data-src={product.hoverImage}
-                    src={product.hoverImage}
-                    alt="image-product"
-                  />
-                </a>
-                {product.sizes.length > 0 && (
-                  <div className="size-list">
-                    {product.sizes.map((size) => (
-                      <span key={size}>{size}</span>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <div className="card-product-info">
-                <a href={`/productos/${product.slug}`} className="title link">
-                  {product.name}
-                </a>
-                <span className="price">S/{product.price.toFixed(2)}</span>
-                {product.colors.length > 0 && (
-                  <ul className="list-color-product">
-                    {product.colors.map((color, index) => (
-                      <li key={index} className={`list-color-item color-swatch ${index === 0 ? "active" : ""}`}>
-                        <span className="tooltip">{color.name}</span>
-                        <span className={`swatch-value ${color.value}`}></span>
-                        <img className="lazyload" data-src={color.image} src={color.image} alt="image-product" />
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </div>
+            <ProductCard key={product.id} product={product} className="fl-item" />
           ))}
         </div>
         <div className="tf-pagination-wrap view-more-button text-center">
