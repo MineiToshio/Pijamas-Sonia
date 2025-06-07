@@ -1,4 +1,5 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
+import PopularProducts from "@/components/PopularProducts";
 import ProductDetails from "@/components/ProductDetails";
 import { INVENTORY } from "@/utils/inventory";
 import { notFound } from "next/navigation";
@@ -19,6 +20,7 @@ const page = async ({ params }: PageProps) => {
     <>
       <Breadcrumbs currentPage={product.name} />
       <ProductDetails product={product} />
+      <PopularProducts excludeProductId={product.id} />
     </>
   );
 };
