@@ -1,5 +1,5 @@
 import { Product } from "./types";
-import { COLORS, GENDERS, MATERIALS } from "./constants";
+import { COLORS, GENDERS, MATERIALS, SIZES } from "./constants";
 
 const PRODUCTS: Product[] = [
   {
@@ -14,7 +14,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-3.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-4.jpeg" },
@@ -35,7 +35,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-2.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-3.jpeg" },
@@ -55,7 +55,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-8.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-1.jpeg" },
@@ -75,7 +75,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-7.jpeg" },
@@ -96,7 +96,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-5.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-6.jpeg" },
@@ -118,7 +118,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.skyBlue, image: "/images/products/product-4.jpeg" },
       { ...COLORS.lead, image: "/images/products/product-5.jpeg" },
@@ -138,7 +138,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.azuline, image: "/images/products/product-3.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-4.jpeg" },
@@ -157,7 +157,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-1.jpeg" },
       { ...COLORS.bubblegum, image: "/images/products/product-2.jpeg" },
@@ -176,7 +176,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-7.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-8.jpeg" },
@@ -196,7 +196,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-6.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-7.jpeg" },
@@ -216,7 +216,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-4.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-5.jpeg" },
@@ -235,7 +235,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-2.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-3.jpeg" },
@@ -256,7 +256,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.coral, image: "/images/products/product-1.jpeg" },
       { ...COLORS.barnie, image: "/images/products/product-2.jpeg" },
@@ -276,7 +276,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-8.jpeg" },
       { ...COLORS.maroon, image: "/images/products/product-1.jpeg" },
@@ -296,7 +296,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.azuline, image: "/images/products/product-7.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-8.jpeg" },
@@ -315,7 +315,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.bubblegum, image: "/images/products/product-7.jpeg" },
@@ -334,7 +334,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-5.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-6.jpeg" },
@@ -354,7 +354,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-4.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-5.jpeg" },
@@ -373,7 +373,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-3.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-4.jpeg" },
@@ -393,7 +393,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-2.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-3.jpeg" },
@@ -412,7 +412,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-8.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-1.jpeg" },
@@ -432,7 +432,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-7.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-8.jpeg" },
@@ -452,7 +452,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-7.jpeg" },
@@ -472,7 +472,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-5.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-6.jpeg" },
@@ -491,7 +491,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-4.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-5.jpeg" },
@@ -510,7 +510,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-3.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-4.jpeg" },
@@ -530,7 +530,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-2.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-3.jpeg" },
@@ -551,7 +551,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.skyBlue, image: "/images/products/product-1.jpeg" },
       { ...COLORS.lead, image: "/images/products/product-2.jpeg" },
@@ -571,7 +571,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.azuline, image: "/images/products/product-8.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },
@@ -590,7 +590,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-7.jpeg" },
       { ...COLORS.bubblegum, image: "/images/products/product-8.jpeg" },
@@ -609,7 +609,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L", "Standard"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l, SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-7.jpeg" },
@@ -629,7 +629,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-5.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-6.jpeg" },
@@ -649,7 +649,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["S", "M", "L", "Standard"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l, SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-4.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-5.jpeg" },
@@ -669,7 +669,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-3.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-4.jpeg" },
@@ -689,7 +689,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.waterGreen, image: "/images/products/product-2.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-3.jpeg" },
@@ -708,7 +708,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.waterGreen, image: "/images/products/product-1.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-2.jpeg" },
@@ -727,7 +727,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.other,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.wine, image: "/images/products/product-8.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },
@@ -747,7 +747,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["S", "M", "L", "Standard"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l, SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-7.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-8.jpeg" },
@@ -767,7 +767,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L", "Standard"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l, SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-7.jpeg" },
@@ -787,7 +787,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-5.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-6.jpeg" },
@@ -807,7 +807,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.rosewood, image: "/images/products/product-4.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-5.jpeg" },
@@ -826,7 +826,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-3.jpeg" },
       { ...COLORS.skyBlue, image: "/images/products/product-4.jpeg" },
@@ -847,7 +847,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-2.jpeg" },
       { ...COLORS.waterGreen, image: "/images/products/product-3.jpeg" },
@@ -866,7 +866,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-1.jpeg" },
       { ...COLORS.lead, image: "/images/products/product-2.jpeg" },
@@ -885,7 +885,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-8.jpeg" },
       { ...COLORS.waterGreen, image: "/images/products/product-1.jpeg" },
@@ -904,7 +904,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.fleece,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["S", "M", "L", "Standard"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l, SIZES.standard],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-7.jpeg" },
       { ...COLORS.skyBlue, image: "/images/products/product-8.jpeg" },
@@ -923,7 +923,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.fleece,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L", "Standard"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l, SIZES.standard],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-7.jpeg" },
@@ -1071,7 +1071,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.chamois,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.wine, image: "/images/products/product-6.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-7.jpeg" },
@@ -1090,7 +1090,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.chamois,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["Standard"],
+    sizes: [SIZES.standard],
     colors: [
       { ...COLORS.wine, image: "/images/products/product-5.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-6.jpeg" },
@@ -1108,7 +1108,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-4.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-5.jpeg" },
@@ -1127,7 +1127,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-3.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-4.jpeg" },
@@ -1146,7 +1146,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-2.jpeg" },
       { ...COLORS.italianBlue, image: "/images/products/product-3.jpeg" },
@@ -1166,7 +1166,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-1.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-2.jpeg" },
@@ -1185,7 +1185,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-8.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },
@@ -1205,7 +1205,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-7.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-8.jpeg" },
@@ -1226,7 +1226,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.leaf, image: "/images/products/product-6.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-7.jpeg" },
@@ -1247,7 +1247,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-5.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-6.jpeg" },
@@ -1266,7 +1266,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-4.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-5.jpeg" },
@@ -1286,7 +1286,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-3.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-4.jpeg" },
@@ -1306,7 +1306,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-2.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-3.jpeg" },
@@ -1326,7 +1326,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-1.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-2.jpeg" },
@@ -1346,7 +1346,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-8.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },
@@ -1366,7 +1366,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-7.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-8.jpeg" },
@@ -1386,7 +1386,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.polar,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-6.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-7.jpeg" },
@@ -1406,7 +1406,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-5.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-6.jpeg" },
@@ -1426,7 +1426,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-4.jpeg" },
       { ...COLORS.leaf, image: "/images/products/product-5.jpeg" },
@@ -1447,7 +1447,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.plush,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [],
   },
   {
@@ -1462,7 +1462,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.plush,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [],
   },
   {
@@ -1476,7 +1476,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },
       { ...COLORS.lead, image: "/images/products/product-2.jpeg" },
@@ -1496,7 +1496,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-8.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-1.jpeg" },
@@ -1596,7 +1596,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-3.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-4.jpeg" },
@@ -1616,7 +1616,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-2.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-3.jpeg" },
@@ -1636,7 +1636,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },
       { ...COLORS.lead, image: "/images/products/product-2.jpeg" },
@@ -1656,7 +1656,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-8.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-1.jpeg" },
@@ -1677,7 +1677,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [],
   },
   {
@@ -1691,7 +1691,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-4.jpeg",
     hoverImage: "/images/products/product-5.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-7.jpeg" },
@@ -1710,7 +1710,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-5.jpeg" },
       { ...COLORS.leaf, image: "/images/products/product-6.jpeg" },
@@ -1730,7 +1730,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-4.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-5.jpeg" },
@@ -1750,7 +1750,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-3.jpeg" },
       { ...COLORS.leaf, image: "/images/products/product-4.jpeg" },
@@ -1770,7 +1770,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-2.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-3.jpeg" },
@@ -1790,7 +1790,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.maroon, image: "/images/products/product-1.jpeg" },
       { ...COLORS.leaf, image: "/images/products/product-2.jpeg" },
@@ -1810,7 +1810,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-8.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-1.jpeg" },
@@ -1830,7 +1830,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-5.jpeg",
     hoverImage: "/images/products/product-6.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-7.jpeg" },
       { ...COLORS.leaf, image: "/images/products/product-8.jpeg" },
@@ -1864,7 +1864,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-3.jpeg",
     hoverImage: "/images/products/product-4.jpeg",
-    sizes: ["S", "M", "L"],
+    sizes: [SIZES.s, SIZES.m, SIZES.l],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-5.jpeg" },
       { ...COLORS.pink, image: "/images/products/product-6.jpeg" },
@@ -1883,7 +1883,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-2.jpeg",
     hoverImage: "/images/products/product-3.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.blue, image: "/images/products/product-4.jpeg" },
       { ...COLORS.lead, image: "/images/products/product-5.jpeg" },
@@ -1903,7 +1903,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.flannel,
     mainImage: "/images/products/product-1.jpeg",
     hoverImage: "/images/products/product-2.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.fuchsia, image: "/images/products/product-3.jpeg" },
       { ...COLORS.lilac, image: "/images/products/product-4.jpeg" },
@@ -1924,7 +1924,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-8.jpeg",
     hoverImage: "/images/products/product-1.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [],
   },
   {
@@ -1938,7 +1938,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.pima,
     mainImage: "/images/products/product-7.jpeg",
     hoverImage: "/images/products/product-8.jpeg",
-    sizes: ["XL"],
+    sizes: [SIZES.xl],
     colors: [
       { ...COLORS.pink, image: "/images/products/product-1.jpeg" },
       { ...COLORS.turquoise, image: "/images/products/product-2.jpeg" },
@@ -1957,7 +1957,7 @@ const PRODUCTS: Product[] = [
     material: MATERIALS.cotton,
     mainImage: "/images/products/product-6.jpeg",
     hoverImage: "/images/products/product-7.jpeg",
-    sizes: ["4", "6", "8", "10", "12", "14"],
+    sizes: [SIZES[4], SIZES[6], SIZES[8], SIZES[10], SIZES[12], SIZES[14]],
     colors: [
       { ...COLORS.lead, image: "/images/products/product-8.jpeg" },
       { ...COLORS.blue, image: "/images/products/product-1.jpeg" },

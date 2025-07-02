@@ -248,4 +248,18 @@ export const GENDERS = {
   boy: "Niño",
   girl: "Niña",
   baby: "Bebe",
+} as const;
+
+export const SIZES = {
+  4: "4",
+  6: "6",
+  8: "8",
+  10: "10",
+  12: "12",
+  14: "14",
+  s: "S",
+  m: "M",
+  l: "L",
+  xl: "XL",
+  standard: "Standard",
 };

@@ -3,13 +3,14 @@
 import { FC, useState } from "react";
 import ProductsList from "./ProductsList";
 import Portal from "./Portal";
-import Filter from "./Filter";
+import Filter, { Filters } from "./Filter";
 import { INVENTORY } from "@/utils/inventory";
 
 const ITEMS_TO_SHOW = 12;
 
 const Products: FC = ({}) => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [filters, setFilters] = useState<Filters>({});
   const startIndex = currentPage * ITEMS_TO_SHOW;
   const endIndex = startIndex + ITEMS_TO_SHOW;
   const products = INVENTORY.slice(startIndex, endIndex);
@@ -32,6 +33,10 @@ const Products: FC = ({}) => {
     setCurrentPage(pageNumber);
   };
 
+  const handleFilterChange = () => {
+    setFilters({});
+  };
+
   return (
     <>
       <ProductsList
@@ -43,7 +48,7 @@ const Products: FC = ({}) => {
         goToPage={goToPage}
       />
       <Portal>
-        <Filter />
+        <Filter filters={filters} onChange={handleFilterChange} />
       </Portal>
     </>
   );
