@@ -4667,7 +4667,7 @@ header.header-bg {
   width: 26px;
   height: 26px;
   min-width: 16px;
-  border: 1px solid transparent;
+  border: 1px solid var(--line);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -7184,11 +7184,6 @@ header.header-bg {
 }
 .modal-shopping-cart .tf-mini-cart-bottom-wrap .tf-cart-checkbox {
   margin-top: 10px;
-}
-.modal-shopping-cart .tf-mini-cart-bottom-wrap .tf-mini-cart-view-checkout {
-  margin-top: 20px;
-  display: flex;
-  gap: 14px;
 }
 .modal-shopping-cart .tf-cart-totals-volume-discounts .cart-volume-discount {
   display: flex;
@@ -11164,10 +11159,6 @@ header.header-bg {
 .list-volume-discount-grid .volume-discount-item .bag-sticky .feature svg {
   width: 12px;
 }
-.list-volume-discount-grid .volume-discount-item .bag-sticky .feature svg path {
-  fill: var(--white);
-}
-.list-volume-discount-grid .volume-discount-item .bag-sticky::after,
 .list-volume-discount-grid .volume-discount-item .bag-sticky::before {
   content: "";
   position: absolute;
@@ -18471,10 +18462,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
   .flat-iconbox-v2 .tf-icon-box .icon {
     margin-bottom: 34px;
-  }
-  .flat-iconbox-v3 .wrap-iconbox {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
   }
   .flat-iconbox-v3 .wrap-iconbox .swiper-slide:last-child {
     grid-column: unset;
