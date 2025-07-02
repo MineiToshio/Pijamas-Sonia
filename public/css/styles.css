@@ -4667,7 +4667,7 @@ header.header-bg {
   width: 26px;
   height: 26px;
   min-width: 16px;
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -4692,10 +4692,10 @@ header.header-bg {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tf-check-color.bg_white {
+.tf-check-color.bg_blanco {
   border-color: var(--line);
 }
-.tf-check-color.bg_white::before {
+.tf-check-color.bg_blanco::before {
   color: var(--main);
 }
 
