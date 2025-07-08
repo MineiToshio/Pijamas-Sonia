@@ -5,16 +5,39 @@ import { ValueOf } from "next/dist/shared/lib/constants";
 import { FC } from "react";
 
 export type Filters = {
-  gender?: ValueOf<typeof GENDERS>;
+  genders?: ValueOf<typeof GENDERS>[];
+  materials?: ValueOf<typeof MATERIALS>[];
+  price?: {
+    max: number;
+    min: number;
+  };
+  colors?: ValueOf<typeof COLORS>[];
+  sizes?: ValueOf<typeof SIZES>[];
 };
 
 type Props = {
   filters: Filters;
-  onChange: () => void;
+  onChange: (filters: Filters) => void;
 };
 
 const Filter: FC<Props> = ({ filters, onChange }) => {
   const maxPrice = Math.max(...INVENTORY.map((product) => product.price));
+
+  const toggleArrayFilter = <T,>(
+    filterKey: keyof Filters,
+    value: T,
+    currentArray: T[] | undefined,
+    compareFn: (a: T, b: T) => boolean = (a, b) => a === b,
+  ) => {
+    const current = currentArray || [];
+    const exists = current.some((item) => compareFn(item, value));
+    const newArray = exists ? current.filter((item) => !compareFn(item, value)) : [...current, value];
+
+    onChange({
+      ...filters,
+      [filterKey]: newArray.length > 0 ? newArray : undefined,
+    });
+  };
 
   return (
     <div className="offcanvas offcanvas-start canvas-filter" id="filterShop">
@@ -45,7 +68,14 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
                   if (count === 0) return null;
                   return (
                     <li key={gender} className="list-item d-flex gap-12 align-items-center">
-                      <input type="radio" name="gender" className="tf-check" id={`gender-${gender}`} />
+                      <input
+                        type="checkbox"
+                        name="gender"
+                        className="tf-check"
+                        id={`gender-${gender}`}
+                        checked={filters.genders?.includes(gender) || false}
+                        onChange={() => toggleArrayFilter("genders", gender, filters.genders)}
+                      />
                       <label htmlFor={`gender-${gender}`} className="label">
                         <span>{gender}</span>&nbsp;<span>({count})</span>
                       </label>
@@ -73,7 +103,14 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
                   if (count === 0) return null;
                   return (
                     <li key={material} className="list-item d-flex gap-12 align-items-center">
-                      <input type="radio" name="material" className="tf-check" id={`material-${material}`} />
+                      <input
+                        type="checkbox"
+                        name="material"
+                        className="tf-check"
+                        id={`material-${material}`}
+                        checked={filters.materials?.includes(material) || false}
+                        onChange={() => toggleArrayFilter("materials", material, filters.materials)}
+                      />
                       <label htmlFor={`material-${material}`} className="label">
                         <span>{material}</span>&nbsp;<span>({count})</span>
                       </label>
@@ -97,6 +134,7 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
             <div id="price" className="collapse show">
               <div className="widget-price filter-price">
                 <div className="price-val-range" id="price-value-range" data-min="0" data-max={maxPrice}></div>
+
                 <div className="box-title-price">
                   <span className="title-price">Precio :</span>
                   <div className="caption-price">
@@ -129,11 +167,13 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
                   return (
                     <li key={color.value} className="list-item d-flex gap-12 align-items-center">
                       <input
-                        type="radio"
+                        type="checkbox"
                         name="color"
                         className={clsx("tf-check-color", color.value)}
                         id={`color-${color.name}`}
                         value={color.name}
+                        checked={filters.colors?.some((c) => c.name === color.name) || false}
+                        onChange={() => toggleArrayFilter("colors", color, filters.colors, (a, b) => a.name === b.name)}
                       />
                       <label htmlFor={`color-${color.name}`} className="label">
                         <span>{color.name}</span>&nbsp;<span>({count})</span>
@@ -163,11 +203,13 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
                   return (
                     <li key={size} className="list-item d-flex gap-12 align-items-center">
                       <input
-                        type="radio"
+                        type="checkbox"
                         name="size"
                         className="tf-check tf-check-size"
                         value={size}
                         id={`size-${size}`}
+                        checked={filters.sizes?.includes(size) || false}
+                        onChange={() => toggleArrayFilter("sizes", size, filters.sizes)}
                       />
                       <label htmlFor={`size-${size}`} className="label">
                         <span>{size}</span>&nbsp;<span>({count})</span>
