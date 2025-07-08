@@ -3,6 +3,7 @@ import { INVENTORY } from "@/utils/inventory";
 import { Filters } from "@/utils/types";
 import clsx from "clsx";
 import { FC } from "react";
+import PriceSlider from "./PriceSlider";
 
 type Props = {
   filters: Filters;
@@ -25,6 +26,13 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
     onChange({
       ...filters,
       [filterKey]: newArray.length > 0 ? newArray : undefined,
+    });
+  };
+
+  const handlePriceChange = (min: number, max: number) => {
+    onChange({
+      ...filters,
+      price: { min, max },
     });
   };
 
@@ -122,7 +130,13 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
             </div>
             <div id="price" className="collapse show">
               <div className="widget-price filter-price">
-                <div className="price-val-range" id="price-value-range" data-min="0" data-max={maxPrice}></div>
+                <PriceSlider
+                  min={0}
+                  max={maxPrice}
+                  currentMin={filters.price?.min || 0}
+                  currentMax={filters.price?.max || maxPrice}
+                  onChange={handlePriceChange}
+                />
 
                 <div className="box-title-price">
                   <span className="title-price">Precio :</span>
