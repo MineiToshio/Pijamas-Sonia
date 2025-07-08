@@ -1,18 +1,47 @@
-import { Product } from "@/utils/types";
-import { FC } from "react";
+"use client";
+
+import { Filters, Product } from "@/utils/types";
+import { FC, useMemo } from "react";
 import ProductCard from "./ProductCard";
 import clsx from "clsx";
+import FilterTag from "./FilterTag";
+import { COLORS } from "@/utils/constants";
 
 type Props = {
   products: Product[];
   totalPages: number;
   currentPage: number;
+  filters: Filters;
+  productsCount: number;
   goToNextPage: () => void;
   goToPrevPage: () => void;
   goToPage: (pageNumber: number) => void;
+  onRemoveFilter: (filterType: keyof Filters, value?: string) => void;
+  onClearAllFilters: () => void;
 };
 
-const ProductsList: FC<Props> = ({ products, totalPages, currentPage, goToNextPage, goToPrevPage, goToPage }) => {
+const ProductsList: FC<Props> = ({
+  products,
+  totalPages,
+  currentPage,
+  filters,
+  productsCount,
+  goToNextPage,
+  goToPrevPage,
+  goToPage,
+  onRemoveFilter,
+  onClearAllFilters,
+}) => {
+  const hasFilters = useMemo(() => {
+    return !!(
+      (filters.genders && filters.genders.length > 0) ||
+      (filters.materials && filters.materials.length > 0) ||
+      filters.price ||
+      (filters.colors && filters.colors.length > 0) ||
+      (filters.sizes && filters.sizes.length > 0)
+    );
+  }, [filters]);
+
   return (
     <section className="flat-spacing-2">
       <div className="container">
@@ -86,14 +115,42 @@ const ProductsList: FC<Props> = ({ products, totalPages, currentPage, goToNextPa
           </div>
         </div>
         <div className="wrapper-control-shop">
-          <div className="meta-filter-shop">
-            <div id="product-count-grid" className="count-text"></div>
-            <div id="product-count-list" className="count-text"></div>
-            <div id="applied-filters"></div>
-            <button id="remove-all" className="remove-all-filters" style={{ display: "none" }}>
-              Remove All <i className="icon icon-close"></i>
-            </button>
-          </div>
+          {hasFilters && (
+            <div className="meta-filter-shop">
+              <div className="count-text">{productsCount} Productos encontrados</div>
+              <div id="applied-filters">
+                {filters.genders?.map((gender) => (
+                  <FilterTag key={gender} label={gender} onRemove={() => onRemoveFilter("genders", gender)} />
+                ))}
+                {filters.materials?.map((material) => (
+                  <FilterTag key={material} label={material} onRemove={() => onRemoveFilter("materials", material)} />
+                ))}
+                {filters.price && (
+                  <FilterTag
+                    label={`$${filters.price.min}-${filters.price.max}`}
+                    onRemove={() => onRemoveFilter("price")}
+                  />
+                )}
+                {filters.colors?.map((color) => {
+                  const colorClass = Object.values(COLORS).find((c) => c.name === color)?.value;
+                  return (
+                    <FilterTag
+                      key={color}
+                      color={colorClass}
+                      label={color}
+                      onRemove={() => onRemoveFilter("colors", color)}
+                    />
+                  );
+                })}
+                {filters.sizes?.map((size) => (
+                  <FilterTag key={size} label={`Talla ${size}`} onRemove={() => onRemoveFilter("sizes", size)} />
+                ))}
+              </div>
+              <button className="remove-all-filters" onClick={onClearAllFilters}>
+                Remover filtros <i className="icon icon-close"></i>
+              </button>
+            </div>
+          )}
 
           <div className="tf-grid-layout wrapper-shop tf-col-4" id="gridLayout">
             {products.map((product) => (

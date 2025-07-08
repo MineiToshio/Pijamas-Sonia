@@ -1,4 +1,5 @@
-import { GENDERS, MATERIALS } from "./constants";
+import { ValueOf } from "next/dist/shared/lib/constants";
+import { GENDERS, MATERIALS, SIZES } from "./constants";
 
 type SubMenuItem = {
   id: string;
@@ -29,4 +30,15 @@ export type Product = {
     value: string;
     image: string;
   }[];
+};
+
+export type Filters = {
+  genders?: ValueOf<typeof GENDERS>[];
+  materials?: ValueOf<typeof MATERIALS>[];
+  price?: {
+    max: number;
+    min: number;
+  };
+  colors?: string[];
+  sizes?: ValueOf<typeof SIZES>[];
 };

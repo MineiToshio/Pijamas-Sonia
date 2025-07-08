@@ -229,7 +229,7 @@ export const COLORS = {
     name: "Palo Rosa",
     value: "bg_paloRosa",
   },
-};
+} as const;
 
 export const MATERIALS = {
   cotton: "Algodón",
@@ -262,4 +262,4 @@ export const SIZES = {
   l: "L",
   xl: "XL",
   standard: "Standard",
-};
+} as const;

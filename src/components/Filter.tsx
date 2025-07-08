@@ -1,19 +1,8 @@
 import { COLORS, GENDERS, MATERIALS, SIZES } from "@/utils/constants";
 import { INVENTORY } from "@/utils/inventory";
+import { Filters } from "@/utils/types";
 import clsx from "clsx";
-import { ValueOf } from "next/dist/shared/lib/constants";
 import { FC } from "react";
-
-export type Filters = {
-  genders?: ValueOf<typeof GENDERS>[];
-  materials?: ValueOf<typeof MATERIALS>[];
-  price?: {
-    max: number;
-    min: number;
-  };
-  colors?: ValueOf<typeof COLORS>[];
-  sizes?: ValueOf<typeof SIZES>[];
-};
 
 type Props = {
   filters: Filters;
@@ -138,9 +127,9 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
                 <div className="box-title-price">
                   <span className="title-price">Precio :</span>
                   <div className="caption-price">
-                    <div className="price-val" id="price-min-value" data-currency="$"></div>
+                    <span className="price-val">${filters.price?.min || 0}</span>
                     <span>-</span>
-                    <div className="price-val" id="price-max-value" data-currency="$"></div>
+                    <span className="price-val">${filters.price?.max || maxPrice}</span>
                   </div>
                 </div>
               </div>
@@ -172,8 +161,8 @@ const Filter: FC<Props> = ({ filters, onChange }) => {
                         className={clsx("tf-check-color", color.value)}
                         id={`color-${color.name}`}
                         value={color.name}
-                        checked={filters.colors?.some((c) => c.name === color.name) || false}
-                        onChange={() => toggleArrayFilter("colors", color, filters.colors, (a, b) => a.name === b.name)}
+                        checked={filters.colors?.includes(color.name) || false}
+                        onChange={() => toggleArrayFilter("colors", color.name, filters.colors)}
                       />
                       <label htmlFor={`color-${color.name}`} className="label">
                         <span>{color.name}</span>&nbsp;<span>({count})</span>

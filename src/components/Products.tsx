@@ -3,9 +3,9 @@
 import { FC, useState, useMemo } from "react";
 import ProductsList from "./ProductsList";
 import Portal from "./Portal";
-import Filter, { Filters } from "./Filter";
+import Filter from "./Filter";
 import { INVENTORY } from "@/utils/inventory";
-import { Product } from "@/utils/types";
+import { Product, Filters } from "@/utils/types";
 
 const ITEMS_TO_SHOW = 12;
 
@@ -44,8 +44,8 @@ const Products: FC = ({}) => {
         () =>
           filterByPartialArray(
             filters.colors,
-            product.colors,
-            (filterColor, productColor) => filterColor.name === productColor.name,
+            product.colors.map((color) => color.name),
+            (filterColor, productColor) => filterColor === productColor,
           ),
         () => filterByPartialArray(filters.sizes, product.sizes),
       ];
@@ -81,15 +81,59 @@ const Products: FC = ({}) => {
     setCurrentPage(0);
   };
 
+  const handleRemoveFilter = (filterType: keyof Filters, value?: string) => {
+    const newFilters = { ...filters };
+
+    const removeArrayFilterValue = (key: keyof Filters, valueToRemove: string) => {
+      const currentArray = newFilters[key] as string[] | undefined;
+      if (currentArray) {
+        const filteredArray = currentArray.filter((item) => item !== valueToRemove);
+        if (filteredArray.length === 0) {
+          delete newFilters[key];
+        } else {
+          (newFilters[key] as string[]) = filteredArray;
+        }
+      }
+    };
+
+    switch (filterType) {
+      case "genders":
+      case "materials":
+      case "colors":
+      case "sizes":
+        if (value) {
+          removeArrayFilterValue(filterType, value);
+        }
+        break;
+      case "price":
+        delete newFilters.price;
+        break;
+      default:
+        break;
+    }
+
+    setFilters(newFilters);
+    setCurrentPage(0);
+  };
+
+  const handleClearAllFilters = () => {
+    setFilters({});
+    setCurrentPage(0);
+  };
+
   return (
     <>
       <ProductsList
         products={products}
         currentPage={currentPage}
         totalPages={totalPages}
+        filters={filters}
+        productsCount={filteredProducts.length}
         goToNextPage={goToNextPage}
         goToPrevPage={goToPrevPage}
         goToPage={goToPage}
+        onRemoveFilter={handleRemoveFilter}
+        onClearAllFilters={handleClearAllFilters}
       />
       <Portal>
         <Filter filters={filters} onChange={handleFilterChange} />
