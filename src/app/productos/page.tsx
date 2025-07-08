@@ -6,7 +6,6 @@ const page: FC = ({}) => {
   return (
     <>
       <Products />
-      <Script type="text/javascript" src="/js/nouislider.min.js" strategy="lazyOnload" />
       <Script type="text/javascript" src="/js/shop.js" strategy="lazyOnload" />
     </>
   );
