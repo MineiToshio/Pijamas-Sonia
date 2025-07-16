@@ -1,18 +1,127 @@
 "use client";
 
-import { FC, useState, useMemo } from "react";
+import { FC, useState, useMemo, useEffect, useCallback } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import ProductsList from "./ProductsList";
 import Portal from "./Portal";
 import Filter from "./Filter";
 import { INVENTORY } from "@/utils/inventory";
 import { Product, Filters, SortType } from "@/utils/types";
+import { ValueOf } from "next/dist/shared/lib/constants";
+import { GENDERS, MATERIALS, SIZES } from "@/utils/constants";
 
 const ITEMS_TO_SHOW = 12;
 
 const Products: FC = ({}) => {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [currentPage, setCurrentPage] = useState(0);
   const [filters, setFilters] = useState<Filters>({});
   const [sortType, setSortType] = useState<SortType>("a-z");
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  const parseFiltersFromURL = useCallback((): { filters: Filters; sortType: SortType; page: number } => {
+    const urlFilters: Filters = {};
+
+    const genders = searchParams.get("genders");
+    if (genders) {
+      urlFilters.genders = genders.split(",") as ValueOf<typeof GENDERS>[];
+    }
+
+    const materials = searchParams.get("materials");
+    if (materials) {
+      urlFilters.materials = materials.split(",") as ValueOf<typeof MATERIALS>[];
+    }
+
+    const colors = searchParams.get("colors");
+    if (colors) {
+      urlFilters.colors = colors.split(",");
+    }
+
+    const sizes = searchParams.get("sizes");
+    if (sizes) {
+      urlFilters.sizes = sizes.split(",") as ValueOf<typeof SIZES>[];
+    }
+
+    const priceMin = searchParams.get("priceMin");
+    const priceMax = searchParams.get("priceMax");
+    if (priceMin && priceMax) {
+      urlFilters.price = {
+        min: parseFloat(priceMin),
+        max: parseFloat(priceMax),
+      };
+    }
+
+    const sort = searchParams.get("sort") as SortType;
+    const validSortType = ["a-z", "z-a", "price-low-high", "price-high-low"].includes(sort) ? sort : "a-z";
+
+    const page = parseInt(searchParams.get("page") || "1") - 1;
+
+    return {
+      filters: urlFilters,
+      sortType: validSortType,
+      page: Math.max(0, page),
+    };
+  }, [searchParams]);
+
+  const updateURL = useCallback(
+    (newFilters: Filters, newSortType: SortType, newPage: number) => {
+      const params = new URLSearchParams();
+
+      if (newFilters.genders && newFilters.genders.length > 0) {
+        params.set("genders", newFilters.genders.join(","));
+      }
+
+      if (newFilters.materials && newFilters.materials.length > 0) {
+        params.set("materials", newFilters.materials.join(","));
+      }
+
+      if (newFilters.colors && newFilters.colors.length > 0) {
+        params.set("colors", newFilters.colors.join(","));
+      }
+
+      if (newFilters.sizes && newFilters.sizes.length > 0) {
+        params.set("sizes", newFilters.sizes.join(","));
+      }
+
+      if (newFilters.price) {
+        params.set("priceMin", newFilters.price.min.toString());
+        params.set("priceMax", newFilters.price.max.toString());
+      }
+
+      if (newSortType !== "a-z") {
+        params.set("sort", newSortType);
+      }
+
+      if (newPage > 0) {
+        params.set("page", (newPage + 1).toString());
+      }
+
+      const queryString = params.toString();
+      const newURL = queryString ? `${pathname}?${queryString}` : pathname;
+
+      router.replace(newURL, { scroll: false });
+    },
+    [router, pathname],
+  );
+
+  useEffect(() => {
+    if (!isInitialized) {
+      const { filters: urlFilters, sortType: urlSortType, page: urlPage } = parseFiltersFromURL();
+      setFilters(urlFilters);
+      setSortType(urlSortType);
+      setCurrentPage(urlPage);
+      setIsInitialized(true);
+    }
+  }, [parseFiltersFromURL, isInitialized]);
+
+  useEffect(() => {
+    if (isInitialized) {
+      updateURL(filters, sortType, currentPage);
+    }
+  }, [filters, sortType, currentPage, updateURL, isInitialized]);
 
   const applyFilter = (condition: boolean, filterFn: () => boolean): boolean => {
     return !condition || filterFn();
@@ -142,6 +251,10 @@ const Products: FC = ({}) => {
     setSortType(newSortType);
     setCurrentPage(0);
   };
+
+  if (!isInitialized) {
+    return null;
+  }
 
   return (
     <>
