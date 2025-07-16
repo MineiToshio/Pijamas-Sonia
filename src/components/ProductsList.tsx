@@ -58,6 +58,10 @@ const ProductsList: FC<Props> = ({
     return option ? option.label : "Alfabéticamente, A-Z";
   };
 
+  const handleSortChange = (newSortType: SortType) => {
+    onSortChange(newSortType);
+  };
+
   return (
     <section className="flat-spacing-2">
       <div className="container">
@@ -105,9 +109,11 @@ const ProductsList: FC<Props> = ({
                 {SORT_OPTIONS.map((option) => (
                   <div
                     key={option.value}
-                    className="select-item"
+                    className={clsx("select-item", {
+                      active: sortType === option.value,
+                    })}
                     data-sort-value={option.value}
-                    onClick={() => onSortChange(option.value)}
+                    onClick={() => handleSortChange(option.value)}
                   >
                     <span className="text-value-item">{option.label}</span>
                   </div>
@@ -159,33 +165,35 @@ const ProductsList: FC<Props> = ({
               <ProductCard key={product.id} product={product} className="grid" />
             ))}
 
-            <ul className="wg-pagination tf-pagination-list">
-              {currentPage > 0 && (
-                <li>
-                  <a href="#" className="pagination-link animate-hover-btn" onClick={goToPrevPage}>
-                    <span className="icon icon-arrow-left"></span>
-                  </a>
-                </li>
-              )}
-              {Array.from({ length: totalPages }, (_, index) => (
-                <li key={index} className={clsx({ active: currentPage === index })}>
-                  <a
-                    href="#"
-                    onClick={() => goToPage(index)}
-                    className={clsx("pagination-link", { "animate-hover-btn": currentPage !== index })}
-                  >
-                    {index + 1}
-                  </a>
-                </li>
-              ))}
-              {currentPage < totalPages - 1 && (
-                <li>
-                  <a href="#" className="pagination-link animate-hover-btn" onClick={goToNextPage}>
-                    <span className="icon icon-arrow-right"></span>
-                  </a>
-                </li>
-              )}
-            </ul>
+            {totalPages > 1 && (
+              <ul className="wg-pagination tf-pagination-list">
+                {currentPage > 0 && (
+                  <li>
+                    <a href="#" className="pagination-link animate-hover-btn" onClick={goToPrevPage}>
+                      <span className="icon icon-arrow-left"></span>
+                    </a>
+                  </li>
+                )}
+                {Array.from({ length: totalPages }, (_, index) => (
+                  <li key={index} className={clsx({ active: currentPage === index })}>
+                    <a
+                      href="#"
+                      onClick={() => goToPage(index)}
+                      className={clsx("pagination-link", { "animate-hover-btn": currentPage !== index })}
+                    >
+                      {index + 1}
+                    </a>
+                  </li>
+                ))}
+                {currentPage < totalPages - 1 && (
+                  <li>
+                    <a href="#" className="pagination-link animate-hover-btn" onClick={goToNextPage}>
+                      <span className="icon icon-arrow-right"></span>
+                    </a>
+                  </li>
+                )}
+              </ul>
+            )}
           </div>
         </div>
       </div>

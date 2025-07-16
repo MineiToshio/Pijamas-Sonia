@@ -43,118 +43,6 @@
     }
   };
 
-  /* Filter Sort
-  -------------------------------------------------------------------------------------*/
-  var filterSort = function () {
-    let isListActive = $(".sw-layout-list").hasClass("active");
-    let originalProductsList = $("#listLayout .card-product").clone();
-    let originalProductsGrid = $("#gridLayout .card-product").clone();
-    let paginationList = $("#listLayout .wg-pagination").clone();
-    let paginationGrid = $("#gridLayout .wg-pagination").clone();
-
-    $(".select-item").on("click", function () {
-      const sortValue = $(this).data("sort-value");
-      $(".select-item").removeClass("active");
-      $(this).addClass("active");
-      $(".text-sort-value").text($(this).find(".text-value-item").text());
-
-      applyFilter(sortValue, isListActive);
-    });
-
-    $(".tf-view-layout-switch").on("click", function () {
-      const layout = $(this).data("value-layout");
-
-      if (layout === "list") {
-        isListActive = true;
-        $("#gridLayout").hide();
-        $("#listLayout").show();
-      } else {
-        isListActive = false;
-        $("#listLayout").hide();
-        setGridLayout(layout);
-      }
-    });
-
-    function applyFilter(sortValue, isListActive) {
-      let products;
-
-      if (isListActive) {
-        products = $("#listLayout .card-product");
-      } else {
-        products = $("#gridLayout .card-product");
-      }
-
-      if (sortValue === "best-selling") {
-        if (isListActive) {
-          $("#listLayout").empty().append(originalProductsList.clone());
-        } else {
-          $("#gridLayout").empty().append(originalProductsGrid.clone());
-        }
-        bindProductEvents();
-        displayPagination(products, isListActive);
-        return;
-      }
-
-      if (sortValue === "price-low-high") {
-        products.sort(
-          (a, b) =>
-            parseFloat($(a).find(".current-price").text().replace("$", "")) -
-            parseFloat($(b).find(".current-price").text().replace("$", "")),
-        );
-      } else if (sortValue === "price-high-low") {
-        products.sort(
-          (a, b) =>
-            parseFloat($(b).find(".current-price").text().replace("$", "")) -
-            parseFloat($(a).find(".current-price").text().replace("$", "")),
-        );
-      } else if (sortValue === "a-z") {
-        products.sort((a, b) => $(a).find(".title").text().localeCompare($(b).find(".title").text()));
-      } else if (sortValue === "z-a") {
-        products.sort((a, b) => $(b).find(".title").text().localeCompare($(a).find(".title").text()));
-      }
-
-      if (isListActive) {
-        $("#listLayout").empty().append(products);
-      } else {
-        $("#gridLayout").empty().append(products);
-      }
-      bindProductEvents();
-      displayPagination(products, isListActive);
-    }
-
-    function displayPagination(products, isListActive) {
-      if (products.length >= 12) {
-        if (isListActive) {
-          $("#listLayout").append(paginationList.clone());
-        } else {
-          $("#gridLayout").append(paginationGrid.clone());
-        }
-      }
-    }
-
-    function setGridLayout(layoutClass) {
-      $("#gridLayout").show().removeClass().addClass(`wrapper-shop tf-grid-layout ${layoutClass}`);
-      $(".tf-view-layout-switch").removeClass("active");
-      $(`.tf-view-layout-switch[data-value-layout="${layoutClass}"]`).addClass("active");
-    }
-    function bindProductEvents() {
-      if ($(".card-product").length > 0) {
-        $(".color-swatch").on("click, mouseover", function () {
-          var swatchColor = $(this).find("img").attr("src");
-          var imgProduct = $(this).closest(".card-product").find(".img-product");
-          imgProduct.attr("src", swatchColor);
-          $(this).closest(".card-product").find(".color-swatch.active").removeClass("active");
-          $(this).addClass("active");
-        });
-      }
-      $(".size-box").on("click", ".size-item", function () {
-        $(this).closest(".size-box").find(".size-item").removeClass("active");
-        $(this).addClass("active");
-      });
-    }
-    bindProductEvents();
-  };
-
   /* Switch Layout 
   -------------------------------------------------------------------------------------*/
   var swLayoutShop = function () {
@@ -371,7 +259,6 @@
 
   $(function () {
     rangeTwoPrice();
-    filterSort();
     swLayoutShop();
     loadItem();
     handleSidebarFilter();
