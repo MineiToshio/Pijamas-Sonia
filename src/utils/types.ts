@@ -42,3 +42,5 @@ export type Filters = {
   colors?: string[];
   sizes?: ValueOf<typeof SIZES>[];
 };
+
+export type SortType = "a-z" | "z-a" | "price-low-high" | "price-high-low";

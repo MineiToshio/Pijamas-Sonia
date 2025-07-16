@@ -1,23 +1,32 @@
 "use client";
 
-import { Filters, Product } from "@/utils/types";
+import { Filters, Product, SortType } from "@/utils/types";
 import { FC, useMemo } from "react";
 import ProductCard from "./ProductCard";
 import clsx from "clsx";
 import FilterTag from "./FilterTag";
 import { COLORS } from "@/utils/constants";
 
+const SORT_OPTIONS = [
+  { value: "a-z" as SortType, label: "Alfabéticamente, A-Z" },
+  { value: "z-a" as SortType, label: "Alfabéticamente, Z-A" },
+  { value: "price-low-high" as SortType, label: "Precio, menor a mayor" },
+  { value: "price-high-low" as SortType, label: "Precio, mayor a menor" },
+];
+
 type Props = {
   products: Product[];
   totalPages: number;
   currentPage: number;
   filters: Filters;
+  sortType: SortType;
   productsCount: number;
   goToNextPage: () => void;
   goToPrevPage: () => void;
   goToPage: (pageNumber: number) => void;
   onRemoveFilter: (filterType: keyof Filters, value?: string) => void;
   onClearAllFilters: () => void;
+  onSortChange: (sortType: SortType) => void;
 };
 
 const ProductsList: FC<Props> = ({
@@ -25,12 +34,14 @@ const ProductsList: FC<Props> = ({
   totalPages,
   currentPage,
   filters,
+  sortType,
   productsCount,
   goToNextPage,
   goToPrevPage,
   goToPage,
   onRemoveFilter,
   onClearAllFilters,
+  onSortChange,
 }) => {
   const hasFilters = useMemo(() => {
     return !!(
@@ -41,6 +52,11 @@ const ProductsList: FC<Props> = ({
       (filters.sizes && filters.sizes.length > 0)
     );
   }, [filters]);
+
+  const getSortDisplayText = (sort: SortType): string => {
+    const option = SORT_OPTIONS.find((option) => option.value === sort);
+    return option ? option.label : "Alfabéticamente, A-Z";
+  };
 
   return (
     <section className="flat-spacing-2">
@@ -82,34 +98,20 @@ const ProductsList: FC<Props> = ({
           <div className="tf-control-sorting d-flex justify-content-end">
             <div className="tf-dropdown-sort" data-bs-toggle="dropdown">
               <div className="btn-select">
-                <span className="text-sort-value">Featured</span>
+                <span className="text-sort-value">{getSortDisplayText(sortType)}</span>
                 <span className="icon icon-arrow-down"></span>
               </div>
               <div className="dropdown-menu">
-                <div className="select-item active">
-                  <span className="text-value-item">Featured</span>
-                </div>
-                <div className="select-item">
-                  <span className="text-value-item">Best selling</span>
-                </div>
-                <div className="select-item" data-sort-value="a-z">
-                  <span className="text-value-item">Alphabetically, A-Z</span>
-                </div>
-                <div className="select-item" data-sort-value="z-a">
-                  <span className="text-value-item">Alphabetically, Z-A</span>
-                </div>
-                <div className="select-item" data-sort-value="price-low-high">
-                  <span className="text-value-item">Price, low to high</span>
-                </div>
-                <div className="select-item" data-sort-value="price-high-low">
-                  <span className="text-value-item">Price, high to low</span>
-                </div>
-                <div className="select-item">
-                  <span className="text-value-item">Date, old to new</span>
-                </div>
-                <div className="select-item">
-                  <span className="text-value-item">Date, new to old</span>
-                </div>
+                {SORT_OPTIONS.map((option) => (
+                  <div
+                    key={option.value}
+                    className="select-item"
+                    data-sort-value={option.value}
+                    onClick={() => onSortChange(option.value)}
+                  >
+                    <span className="text-value-item">{option.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
